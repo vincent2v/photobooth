@@ -5,3 +5,5 @@
 [Is Pi Camera supported?](https://github.com/andreknieriem/photobooth/wiki/Pi-Camera-Support)
 
 [How to adjust the php.ini file?](https://github.com/andreknieriem/photobooth/wiki/Adjust-php.ini-file)
+
+[I've found a bug, how can I report?](https://github.com/andreknieriem/photobooth/wiki/Bug-reporting)
