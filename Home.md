@@ -9,3 +9,8 @@ A Photobooth webinterface for Raspberry Pi and Windows.
 * [Installation on Windows](https://github.com/andreknieriem/photobooth/wiki/Installation-on-Windows)
 
 ## [FAQ - Frequently asked questions](https://github.com/andreknieriem/photobooth/wiki/FAQ)
+
+
+#### Wiki History
+
+View all changes made in this Wiki [here](https://github.com/andreknieriem/photobooth/wiki/_history).
