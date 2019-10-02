@@ -1,0 +1,2 @@
+### I've trouble setting up E-Mail config. How do I solve my problem?
+If connection fails some help can be found [here](https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting), especially gmail needs some special config.
