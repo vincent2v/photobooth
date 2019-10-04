@@ -26,6 +26,8 @@
 
 [I've trouble setting up E-Mail config. How do I solve my problem?](https://github.com/andreknieriem/photobooth/wiki/E-Mail)
 
+[Chromakeying isn't working if I access the Photobooth page on my Raspberry Pi, but it works if I access Photobooth from an external device (e.g. mobile phone or tablet). How can I solve the problem?](https://github.com/andreknieriem/photobooth/wiki/Chromakeying)
+
 [How to ajust the php.ini file?](https://github.com/andreknieriem/photobooth/wiki/Adjust-php.ini-file)
 
 [How to setup a Raspberry Pi as an acess point?](https://github.com/andreknieriem/photobooth/wiki/RPi-as-acess-point)
