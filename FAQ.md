@@ -20,6 +20,8 @@
 
 [How do I enable Kiosk Mode to automatically start Photobooth in full screen?](https://github.com/andreknieriem/photobooth/wiki/Kiosk-Mode)
 
+[How to disable the blank screen on Raspberry Pi (Raspbian)?](https://github.com/andreknieriem/photobooth/wiki/Disable-blank-screen)
+
 [Can I use a live stream as background?](https://github.com/andreknieriem/photobooth/wiki/Live-stream-background)
 
 [I've a white page after updating to latest Source, how can I solve this?](https://github.com/andreknieriem/photobooth/wiki/Problems-after-update)
