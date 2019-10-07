@@ -132,8 +132,6 @@ Once this is done you need to change the background URL path inside the style.cs
 For reference:
 https://github.com/andreknieriem/photobooth/pull/20
 
-[I've a white page after updating to latest Source, how can I solve this?](https://github.com/andreknieriem/photobooth/wiki/Problems-after-update)
-
 
 ### I've trouble setting up E-Mail config. How do I solve my problem?
 If connection fails some help can be found [here](https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting), especially gmail needs some special config.
