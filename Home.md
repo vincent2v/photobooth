@@ -25,11 +25,10 @@ A Photobooth webinterface for Raspberry Pi and Windows.
 * **Q:** [I've trouble setting up E-Mail config. How do I solve my problem?](FAQ#ive-trouble-setting-up-e-mail-config-how-do-i-solve-my-problem)
 * **Q:** [Chromakeying isn't working if I access the Photobooth page on my Raspberry Pi, but it works if I access Photobooth from an external device (e.g. mobile phone or tablet). How can I solve the problem?](FAQ#chromakeying-isnt-working-if-i-access-the-photobooth-page-on-my-raspberry-pi-but-it-works-if-i-access-photobooth-from-an-external-device-eg-mobile-phone-or-tablet-how-can-i-solve-the-problem)
 * **Q:** [How to ajust the php.ini file?](FAQ#how-to-ajust-the-phpini-file)
-* **Q:** [How to setup a Raspberry Pi as an acess point?](RPi-as-acess-point)
 
 ## Tutorials
 
-* [How to setup a Raspberry Pi as an acess point?](RPi-as-acess-point)
+* [How to setup a Raspberry Pi as an acess point](RPi-as-acess-point)
 
 #### Wiki History
 
