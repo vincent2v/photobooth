@@ -2,6 +2,8 @@
 
 A Photobooth webinterface for Raspberry Pi and Windows.
 
+![](images/start.png)
+
 ## Installation
 
 * [Installation on Raspbian](https://github.com/andreknieriem/photobooth/wiki/Installation-on-Debian)
@@ -10,6 +12,9 @@ A Photobooth webinterface for Raspberry Pi and Windows.
 
 ## [FAQ - Frequently asked questions](https://github.com/andreknieriem/photobooth/wiki/FAQ)
 
+## Tutorials
+
+* [How to setup a Raspberry Pi as an acess point?](https://github.com/andreknieriem/photobooth/wiki/RPi-as-acess-point)
 
 #### Wiki History
 

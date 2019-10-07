@@ -1,2 +1,0 @@
-### How to change the language?
-There are three label files in the lang folder, one for german (de), one for spanish (es), one for english (en) and one for french (fr). You can change the language inside ```my.config.inc.php``` or via Admin Page.
