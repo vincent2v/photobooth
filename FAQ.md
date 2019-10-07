@@ -15,8 +15,6 @@ Pi Camera works with these config changes.
 Raspistill does not give any feedback after the picture was taken, workaround for that with "echo".
 (Thanks to Andreas Maier for that information)
 
-[How to adjust the php.ini file?](https://github.com/andreknieriem/photobooth/wiki/Adjust-php.ini-file)
-
 
 ### I've found a bug, how can I report?
 Please take a look at the issue page [here](https://github.com/andreknieriem/photobooth/issues) , if your bug isn't mentioned already you can create a new issue. Please give informations detailed as possible to reproduce and analyse the problem.
