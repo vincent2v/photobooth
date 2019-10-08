@@ -40,13 +40,11 @@ Give sudo rights to the webserver user (www-data)
 and add the following line to the file:
 ```www-data ALL=(ALL) NOPASSWD: ALL```
 
-Ensure that the camera trigger works:
+Remove execution permission for gphoto2 Volume Monitor to ensure that the camera trigger works:
 ```
-sudo rm /usr/share/dbus-1/services/org.gtk.vfs.GPhoto2VolumeMonitor.service
-sudo rm /usr/share/gvfs/mounts/gphoto2.mount
-sudo rm /usr/share/gvfs/remote-volume-monitors/gphoto2.monitor
-sudo rm /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+sudo chmod -x /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
 ```
+Now reboot your Pi once.
 
 #### Installation on Debian / Debian based distributions:
 Above installation instructions should work for all Debian and Debian based distributions.
