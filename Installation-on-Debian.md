@@ -41,24 +41,24 @@ Next we have to give our webserver user access to the usb device:
 sudo gpasswd -a www-data plugdev
 ```
 
+If you like to use the printer you also have to add your webserver user to the `ld` group:
+```
+sudo gpasswd -a www-data lp
+```
+
 Remove execution permission for gphoto2 Volume Monitor to ensure that the camera trigger works:
 ```
 sudo chmod -x /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
 ```
 
 Now you should restart your Raspberry Pi to apply those settings.
-
-
+```
+reboot
+```
 Please use the following to test if your Webserver is able to take pictures:
 
 ```
 sudo -u www-data gphoto2 --capture-image
-```
-
-If you like to use the printer you also have to add your webserver user to the `ld` group:
-
-```
-sudo gpasswd -a www-data lp
 ```
 
 If everything is working, open the IP address of your Raspberry Pi in a browser.
