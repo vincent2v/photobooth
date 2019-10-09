@@ -6,12 +6,12 @@ sudo apt-get dist-upgrade
 
 **On Raspbian Stretch:**
 ```
-sudo apt-get install git apache2 php php-gd libav-tools
+sudo apt-get install -y git apache2 php php-gd libav-tools
 ```
 
 **On Raspbian Buster**
 ```
-sudo apt-get install git apache2 php php-gd ffmpeg
+sudo apt-get install -y git apache2 php php-gd ffmpeg
 ```
 
 Install latest version of libgphoto2, choose "Install last stable release":
@@ -61,9 +61,9 @@ If you like to use the printer you also have to add your webserver user to the `
 sudo gpasswd -a www-data lp
 ```
 
-If everything is working, open the IP address of your raspberry pi in a browser
+If everything is working, open the IP address of your Raspberry Pi in a browser.
 
 
-#### Installation on Debian / Debian based distributions:
+### Installation on Debian / Debian based distributions:
 Above installation instructions should work for all Debian and Debian based distributions.
 Photobooth can also be used on any other PC/Laptop running a supported OS.
