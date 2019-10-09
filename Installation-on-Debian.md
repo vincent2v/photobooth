@@ -51,12 +51,12 @@ Remove execution permission for gphoto2 Volume Monitor to ensure that the camera
 sudo chmod -x /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
 ```
 
-Now you should restart your Raspberry Pi to apply those settings.
+Now you should restart your Raspberry Pi to apply those settings:
 ```
 reboot
 ```
-Please use the following to test if your Webserver is able to take pictures:
 
+Please use the following to test if your Webserver is able to take pictures:
 ```
 sudo -u www-data gphoto2 --capture-image
 ```
