@@ -4,15 +4,15 @@ sudo apt-get update
 sudo apt-get dist-upgrade
 ```
 
-**On Raspbian Stretch:**
-```
-sudo apt-get install -y git apache2 php php-gd libav-tools
-```
+- **On Raspbian Stretch:**
+  ```
+  sudo apt-get install -y git apache2 php php-gd libav-tools
+  ```
 
-**On Raspbian Buster**
-```
-sudo apt-get install -y git apache2 php php-gd ffmpeg
-```
+- **On Raspbian Buster**
+  ```
+  sudo apt-get install -y git apache2 php php-gd ffmpeg
+  ```
 
 Install latest version of libgphoto2, choose "Install last stable release":
 ```
