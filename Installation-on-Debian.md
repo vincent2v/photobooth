@@ -53,6 +53,8 @@ yarn install
 yarn build
 exit
 ```
+**Please note:** depending on your hardware `yarn install` and `yarn build` takes up to 15min!
+
 
 Next we have to give our webserver user access to the usb device:
 ```
