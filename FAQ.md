@@ -8,7 +8,7 @@ Some DSLR and Compact Cameras are not supported by this project. Please check fo
 ### Is Pi Camera supported?
 Yes it is. You need to adjust the config:
 ```
-$config['take_picture']['cmd'] = 'sudo raspistill -n -o $(date +%s) | echo Done';
+$config['take_picture']['cmd'] = 'raspistill -n -o $(date +%s) | echo Done';
 $config['take_picture']['msg'] = 'Done';
 ```
 Pi Camera works with these config changes.
@@ -21,28 +21,29 @@ Please take a look at the issue page [here](https://github.com/andreknieriem/pho
 
 
 ### I've a white page after updating to latest Source, how can I solve this?
+On v1.9.0 and older:
 It could be your local ```config.json``` file doesn't match latest source. This file is generated if you've used the admin panel to change your config.
 Remove the file and try again!
 ``` sudo rm /var/www/html/admin/config.json```
 
 
 ### How do I change the configuration?
-Use the copy named ```my.config.inc.php``` to make config changes for personal use to prevent sharing personal data on Github by accident.
+Use the copy named ```config/my.config.inc.php``` to make config changes for personal use to prevent sharing personal data on Github by accident.
 You can also open http://localhost/admin and change your configuration there.
 
 
 ### How to change the language?
-There are three label files in the lang folder, one for german (de), one for spanish (es), one for english (en) and one for french (fr). You can change the language inside ```my.config.inc.php``` or via Admin Page.
+There are three label files in the lang folder, one for german (de), one for spanish (es), one for english (en) and one for french (fr). You can change the language inside ```config/my.config.inc.php``` or via Admin Page.
 
 
 ### How to keep pictures on my Camera using gphoto2?
-Add ```--keep``` option for gphoto2 in ```my.config.inc.php```:
+Add ```--keep``` option for gphoto2 in ```config/my.config.inc.php```:
 ```
-	$config['take_picture']['cmd'] = 'sudo gphoto2 --capture-image-and-download --keep --filename=%s images';
+	$config['take_picture']['cmd'] = 'gphoto2 --capture-image-and-download --keep --filename=%s';
 ```
-On some cameras you also need to define the capturetarget because Internal RAM is used to store captured picture. To do this use ```--set-config capturetarget=X``` option for gphoto2 in ```my.config.inc.php``` (replace "X" with the target of your choice):
+On some cameras you also need to define the capturetarget because Internal RAM is used to store captured picture. To do this use ```--set-config capturetarget=X``` option for gphoto2 in ```config/my.config.inc.php``` (replace "X" with the target of your choice):
 ```
-	$config['take_picture']['cmd'] = 'sudo gphoto2 --set-config capturetarget=1 --capture-image-and-download --keep --filename=%s images';
+	$config['take_picture']['cmd'] = 'gphoto2 --set-config capturetarget=1 --capture-image-and-download --keep --filename=%s';
 ```
 To know which capturetarget needs to be defined you need to run:
 ```
@@ -61,9 +62,8 @@ Choice: 1 Memory card
 
 
 ### Can I use Hardware Button to take a Picture on my Raspberry Pi?
-You can use a hardware button connected on GPIO24 to trigger a photo. Set ```$config['use_gpio_button']``` to ```true``` or use the Admin panel to enable this function.
-You also need to run a python script in background to read the state of GPIO24 and send a key-combination (alt+p) if hardware button is pressed to trigger the website to take a photo.
-To run the python script in background add a cronjob:
+You can use a hardware button connected on GPIO24 to trigger a photo. Set `$config['photo_key']` to e.g. `13` (enter key) or use the Admin panel to specify the key.
+You also need to run a python script in background to read the state of GPIO24 and send the key if hardware button is pressed to trigger the website to take a photo.
 ```
 sudo crontab -e
 @reboot python /var/www/html/button.py &
