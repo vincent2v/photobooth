@@ -5,7 +5,7 @@ Updating from an old version to v2.0 it's recommend to [make a clean install](#i
 
 
 #### Updating from v2.x to a newer version
-Make sure you have no local changes, else make sure to commit them (`git add --all && git commit -a -m "my local changes"') and keep them in a backup branch you can return ti later (`git checkout -b mybackupbranch`).
+Make sure you have no local changes, else make sure to commit them (`git add --all && git commit -a -m "my local changes"`) and keep them in a backup branch you can return ti later (`git checkout -b mybackupbranch`).
 
 Run below commands in your terminal:
 ```
