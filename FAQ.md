@@ -136,6 +136,19 @@ https://github.com/andreknieriem/photobooth/pull/20
 ### I've trouble setting up E-Mail config. How do I solve my problem?
 If connection fails some help can be found [here](https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting), especially gmail needs some special config.
 
+Tested working setup:
+- gmx.de
+  - Email host adress: `mail.gmx.net`
+  - Username: `*****@gmx.de`
+  - Port: `587`
+  - Security: `TLS`
+
+- web.de
+  - Email host adress: `smtp.web.de`
+  - Username: `*****` (@web.de is not needed in your username)
+  - Port: `587`
+  - Security: `TLS`
+
 
 ### Chromakeying isn't working if I access the Photobooth page on my Raspberry Pi, but it works if I access Photobooth from an external device (e.g. mobile phone or tablet). How can I solve the problem?
 Open ```chrome://flags``` in your browser.
