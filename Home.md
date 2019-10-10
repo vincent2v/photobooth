@@ -40,9 +40,11 @@ View all version changes [here](changelog).
 * [How to setup a Raspberry Pi as an acess point](RPi-as-acess-point)
 
 ## Clone this Wiki
-Get a copy of this Wiki to always have the FAQ, Changelog etc. with you:
+Get a copy of this Wiki to always have the FAQ, Changelog etc. with you. Run the following command from your Terminal:
+
 `git clone https://github.com/andreknieriem/photobooth.wiki.git`
-To update your local Wiki copy with latest changes you only need to run `git fetch origin && git checkout origin/master`.
+
+To update your local Wiki copy with latest changes you only need to run `git fetch origin && git checkout origin/master` from Terminal.
 
 #### Wiki History
 View all changes made in this Wiki [here](_history).
