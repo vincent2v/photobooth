@@ -156,6 +156,10 @@ Tested working setup:
   - Security: `TLS`
 
 
+### How to only open the gallery to avoid people taking pictures?
+Open [http://localhost/gallery.php](http://localhost/gallery.php) in your browser (you can replace `localhost` with your IP adress).
+
+
 ### Chromakeying isn't working if I access the Photobooth page on my Raspberry Pi, but it works if I access Photobooth from an external device (e.g. mobile phone or tablet). How can I solve the problem?
 Open ```chrome://flags``` in your browser.
 Look for *"Accelerated 2D canvas"* and change it to ```"disabled"```.
