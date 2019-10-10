@@ -10,7 +10,12 @@ A Photobooth webinterface for Raspberry Pi and Windows.
 * [Installation on Debian / Debian based distributions](Installation-on-Debian#installation-on-debian--debian-based-distributions)
 * [Installation on Windows](Installation-on-Windows)
 
+## Update Photobooth
+
+* [Update Photobooth](Update-Photobooth)
+
 ## FAQ - Frequently asked questions
+
 * **Q:** [Is my Camera supported?](FAQ#is-my-camera-supported)
 * **Q:** [Is Pi Camera supported?](FAQ#is-pi-camera-supported)
 * **Q:** [I've found a bug, how can I report?](FAQ#ive-a-white-page-after-updating-to-latest-source-how-can-i-solve-this)
