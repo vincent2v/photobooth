@@ -32,10 +32,17 @@ A Photobooth webinterface for Raspberry Pi and Windows.
 * **Q:** [Chromakeying isn't working if I access the Photobooth page on my Raspberry Pi, but it works if I access Photobooth from an external device (e.g. mobile phone or tablet). How can I solve the problem?](FAQ#chromakeying-isnt-working-if-i-access-the-photobooth-page-on-my-raspberry-pi-but-it-works-if-i-access-photobooth-from-an-external-device-eg-mobile-phone-or-tablet-how-can-i-solve-the-problem)
 * **Q:** [How to ajust the php.ini file?](FAQ#how-to-ajust-the-phpini-file)
 
+## Changelog
+View all version changes [here](changelog).
+
 ## Tutorials
 
 * [How to setup a Raspberry Pi as an acess point](RPi-as-acess-point)
 
-#### Wiki History
+## Clone this Wiki
+Get a copy of this Wiki to always have the FAQ, Changelog etc. with you:
+`git clone https://github.com/andreknieriem/photobooth.wiki.git`
+To update your local Wiki copy with latest changes you only need to run `git fetch origin && git checkout origin/master`.
 
+#### Wiki History
 View all changes made in this Wiki [here](_history).
