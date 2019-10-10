@@ -137,6 +137,12 @@ https://github.com/andreknieriem/photobooth/pull/20
 If connection fails some help can be found [here](https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting), especially gmail needs some special config.
 
 Tested working setup:
+- gmail.com
+  - Email host adress: `smtp.gmail.com`
+  - Username: `*****@gmail.com`
+  - Port: `587`
+  - Security: `TLS`
+
 - gmx.de
   - Email host adress: `mail.gmx.net`
   - Username: `*****@gmx.de`
