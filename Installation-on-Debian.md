@@ -65,11 +65,6 @@ If you like to use the printer you also have to add your webserver user to the `
 sudo gpasswd -a www-data lp
 ```
 
-Remove execution permission for gphoto2 Volume Monitor to ensure that the camera trigger works:
-```
-sudo chmod -x /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
-```
-
 Now you should restart your Raspberry Pi to apply those settings:
 ```
 reboot
@@ -79,6 +74,14 @@ Please use the following to test if your Webserver is able to take pictures:
 ```
 sudo -u www-data gphoto2 --capture-image
 ```
+
+
+If it is not working remove execution permission for gphoto2 Volume Monitor to ensure that the camera trigger works:
+```
+sudo chmod -x /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+```
+Now reboot and try again.
+
 
 If everything is working, open the IP address of your Raspberry Pi in a browser.
 
