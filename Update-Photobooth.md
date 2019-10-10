@@ -1,7 +1,7 @@
 ### Updating Photobooth on Raspbian
 
 #### Updating from v1.9.x or older version
-Updating from an old version to v2.x it's recommend to [make a clean install](home#installation).
+To update from an old version to v2.x it's recommend to [make a clean installalation](home#installation).
 
 
 #### Updating from v2.x to a newer version
