@@ -1,41 +1,32 @@
-### Installation on Raspbian:
+## Installation on Raspbian:
+The steps below were tested on "Raspbian Buster with desktop".
+
+### Update your system
 ```
-sudo apt-get update
-sudo apt-get dist-upgrade
+sudo apt update
+sudo apt dist-upgrade
 ```
 
-- **On Raspbian Stretch:**
-  ```
-  sudo apt-get install -y git apache2 php php-gd libav-tools
-  ```
+### Install dependencies
 
-- **On Raspbian Buster**
-  ```
-  sudo apt-get install -y git apache2 php php-gd ffmpeg
-  ```
+```
+sudo apt install -y git libapache2-mod-php php-gd gphoto2
+```
 
-Install latest version of libgphoto2, choose "Install last stable release":
+To install all client dependencies you also have to [install yarn](https://yarnpkg.com/lang/en/docs/install/#debian-stable):
+```
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update && sudo apt install -y yarn
+```
+
+**Optional:** If you have a new camera, you can also install the latest version of libgphoto2 directly from the maintainer. Choose "Install last stable release":
 ```
 wget https://raw.githubusercontent.com/gonzalo/gphoto2-updater/master/gphoto2-updater.sh && sudo bash gphoto2-updater.sh
 ```
 
-Install Node.js v12.x:
-```
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt-get install -y nodejs
-```
-- Official Node.js install instructions for reference [here](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions-enterprise-linux-fedora-and-snap-packages).
-
-
-To install all dependencies you also have to install yarn:
-```
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt-get update && sudo apt-get install -y yarn
-```
-- Official yarn install instructions for reference [here](https://yarnpkg.com/lang/en/docs/install/#debian-stable).
-
-Give our webserver user access to /var/www:
+### Install photobooth
+Give our webserver user access to `/var/www/`:
 ```
 sudo chown -R www-data:www-data /var/www/
 ```
@@ -44,19 +35,17 @@ Get the Photobooth source:
 ```
 cd /var/www/
 sudo -u www-data -s
-rm -r html/
+rm -r html/*
 git clone https://github.com/andreknieriem/photobooth html
 cd /var/www/html
 git submodule update --init
-cp config/config.inc.php config/my.config.inc.php
 yarn install
 yarn build
 exit
 ```
 **Please note:** depending on your hardware `yarn install` and `yarn build` takes up to 15min!
 
-
-Next we have to give our webserver user access to the usb device:
+Next we have to give our webserver user access to the USB device:
 ```
 sudo gpasswd -a www-data plugdev
 ```
@@ -77,17 +66,19 @@ Please use the following to test if your Webserver is able to take pictures:
 sudo -u www-data gphoto2 --capture-image
 ```
 
-
-If it is not working remove execution permission for gphoto2 Volume Monitor to ensure that the camera trigger works:
+If it is not working, your operation system probably automatically mounted your camera. You can unmount it, or remove execution permission for gphoto2 Volume Monitor to ensure that the camera is not mounted anymore:
 ```
 sudo chmod -x /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
 ```
-Now reboot and try again.
+Now reboot or unmount your camera with the following commands (you get a list of mounted cameras with `gio mount -l`):
+```
+gio mount -u gphoto2://YOUR-CAMERA
+```
+Now try again.
+
+If everything is working, open the IP address (you get it via `ip addr`) of your Raspberry Pi, or if you open it on your machine, type `localhost` in your browser.
 
 
-If everything is working, open the IP address of your Raspberry Pi in a browser.
-
-
-### Installation on Debian / Debian based distributions:
+## Installation on Debian / Debian based distributions:
 Above installation instructions should work for all Debian and Debian based distributions.
 Photobooth can also be used on any other PC/Laptop running a supported OS.
