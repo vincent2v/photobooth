@@ -44,7 +44,7 @@ Get a copy of this Wiki to always have the FAQ, Changelog etc. with you. Run the
 
 `git clone https://github.com/andreknieriem/photobooth.wiki.git`
 
-To update your local Wiki copy with latest changes you only need to run `git fetch origin && git checkout origin/master` from Terminal.
+To update your local Wiki copy with latest changes you only need to run `git pull` from Terminal.
 
 #### Wiki History
 View all changes made in this Wiki [here](_history).
