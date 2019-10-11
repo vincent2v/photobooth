@@ -1,5 +1,5 @@
 ## Installation on Windows
-**_Instructions not complete. If you like to help documenting proper instructions for Windows please open an issue [here](https://github.com/andreknieriem/photobooth/issues)._**
+**_Instructions not complete. If you like to help documenting proper instructions for Windows please use the issue [here](https://github.com/andreknieriem/photobooth/issues/121) to let us know._**
 
 - Download and install [git](https://git-scm.com/downloads)
 
