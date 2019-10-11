@@ -6,7 +6,7 @@
 - Download [digiCamControl](http://digicamcontrol.com/) and extract the archive into ```digicamcontrol``` inside the photobooth root folder, e.g. ```D:\xampp\htdocs\photobooth\digicamcontrol```
 
 ### Install dependencies
-To install all client dependencies you have to [install yarn].(https://yarnpkg.com/lang/en/docs/install/#windows-stable).
+To install all client dependencies you have to [install yarn](https://yarnpkg.com/lang/en/docs/install/#windows-stable).
 
 Once yarn is installed, run below commands in your Photobooth folder to install all client depencies:
 ```
