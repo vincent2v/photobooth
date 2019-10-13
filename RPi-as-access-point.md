@@ -1,4 +1,4 @@
-### How to setup a Raspberry Pi as an acess point?
+### How to setup a Raspberry Pi as an access point?
 
 ```python
 sudo apt install dnsmasq hostapd
