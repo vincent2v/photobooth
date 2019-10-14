@@ -37,7 +37,7 @@ View all version changes [here](changelog).
 
 ## Tutorials
 
-* [How to setup a Raspberry Pi as an acess point](RPi-as-acess-point)
+* [How to setup a Raspberry Pi as an acess point](RPi-as-access-point)
 
 ## Clone this Wiki
 Get a copy of this Wiki to always have the FAQ, Changelog etc. with you. Run the following command from your Terminal:
