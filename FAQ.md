@@ -120,8 +120,9 @@ Yes you can. Motion is required!
 ```
 sudo apt-get install motion
 ```
-Also a Webcam is required and /etc/motion/motion.conf needs to be changed to your needs (e.g. starting on boot, using videoX, resolution etc.)
-Once this is done you need to change the background URL path inside the style.css, search and replace:
+Also a Webcam is required and /etc/motion/motion.conf needs to be changed to your needs (e.g. starting on boot, using videoX, resolution etc.).
+
+Once this is done you need to change the background URL path inside the style.css, search and replace `../img/bg.jpg`. Example:
 ```
 -   background: url(../img/bg.jpg) 
 +   background: url(http://127.0.0.1:8081)
