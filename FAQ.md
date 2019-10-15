@@ -124,8 +124,8 @@ Also a Webcam is required and /etc/motion/motion.conf needs to be changed to you
 
 Once this is done you need to change the background URL path inside the style.css, search and replace `../img/bg.jpg`. Example:
 ```
--   background-image: url(../img/bg.jpg) 
-+   background-image: url(http://127.0.0.1:8081)
+-   background-image: url(../img/bg.jpg);
++   background-image: url(http://127.0.0.1:8081);
 ```
 (For blue-gray theme also replace `bg_bluegray.jpg`).
 
