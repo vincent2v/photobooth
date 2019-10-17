@@ -28,16 +28,16 @@ Remove the file and try again!
 
 
 ### How do I change the configuration?
-Use the copy named ```config/my.config.inc.php``` to make config changes for personal use to prevent sharing personal data on Github by accident.
-You can also open http://localhost/admin and change your configuration there.
+Only add options which you like to change to `config/my.config.inc.php` to prevent sharing personal data on Github by accident and to make the update easier.
+You can also open `http://localhost/admin` and change your configuration there.
 
 
 ### How to change the language?
-There are three label files in the lang folder, one for german (de), one for spanish (es), one for english (en) and one for french (fr). You can change the language inside ```config/my.config.inc.php``` or via Admin Page.
+You can change the language inside ```config/my.config.inc.php``` or via Admin Page.
 
 
 ### How to keep pictures on my Camera using gphoto2?
-Add ```--keep``` option for gphoto2 in ```config/my.config.inc.php```:
+Add `--keep` option for gphoto2 in `config/my.config.inc.php`:
 ```
 	$config['take_picture']['cmd'] = 'gphoto2 --capture-image-and-download --keep --filename=%s';
 ```
