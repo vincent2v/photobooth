@@ -1,0 +1,13 @@
+- all pending pull requests are merged
+- eslint is satisfied (`yarn eslint`)
+- there are no orphaned files, the repository is clean
+- checkout the related stable branch (e.g. `stable2`)
+- merge master branch (`git merge master`)
+- bump version in `package.json` according to [semantic versioning](https://semver.org)
+- create commit (`git commit -am "bump version to vX.X.X"`)
+- create (signed) tag (`git tag -s -a vX.X.X -m "tag vX.X.X"`)
+- pack build by calling `node scripts/pack-build.js`
+- push commit and tag (`git push origin --tags`)
+- update changelog in [wiki](https://github.com/andreknieriem/photobooth/wiki/Changelog)
+- create release from tag on Github and attach archives (zip and tar)
+- party :tada: 
