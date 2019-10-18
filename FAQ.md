@@ -62,7 +62,16 @@ Choice: 1 Memory card
 
 
 ### Can I use Hardware Button to take a Picture on my Raspberry Pi?
-You can use a hardware button connected on GPIO24 to trigger a photo. Set `$config['photo_key']` to e.g. `13` (enter key) or use the Admin panel to specify the key.
+You can use a hardware button connected on GPIO24 to trigger a photo. Set `$config['photo_key']` to e.g. `13` (enter key) or use the Admin panel to specify the key. Next you have to install some dependencies:
+
+```
+sudo apt install libudev-dev
+sudo pip install python-uinput
+echo "uinput" | sudo tee -a /etc/modules
+```
+
+After a reboot (`sudo shutdown -r now`), you should check if the uinput kernel module is loaded by executing `lsmod | grep uinput`. If you get some output, everything is fine.
+
 You also need to run a python script in background to read the state of GPIO24 and send the key if hardware button is pressed to trigger the website to take a photo.
 ```
 sudo crontab -e
