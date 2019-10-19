@@ -3,7 +3,7 @@
 
 - Make sure you've [Apache Server](https://httpd.apache.org/docs/2.4/platform/windows.html) and [PHP](https://www.php.net/manual/de/install.windows.php) installed.
 
-Recommend: [XAMPP](http://www.apachefriends.org/en/xampp.html) (Apache + MariaDB + PHP + Perl)
+  Recommend: [XAMPP](http://www.apachefriends.org/en/xampp.html) (Apache + MariaDB + PHP + Perl)
 
 - Download latest Photobooth release `photobooth-xxx.zip` (don't download the Source code) from the `Assets` [here](https://github.com/andreknieriem/photobooth/releases) and extract it.
 
