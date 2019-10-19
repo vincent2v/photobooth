@@ -1,16 +1,8 @@
 ## Installation on Windows
 **_Instructions not complete. If you like to help documenting proper instructions for Windows please use the issue [here](https://github.com/andreknieriem/photobooth/issues/121) to let us know._**
 
-- Download and install [git](https://git-scm.com/downloads)
+- Make sure you've [Apache Server](https://httpd.apache.org/docs/2.4/platform/windows.html) installed.
 
-- Download [digiCamControl](http://digicamcontrol.com/) and extract the archive into ```digicamcontrol``` inside the photobooth root folder, e.g. ```D:\xampp\htdocs\photobooth\digicamcontrol```
+- Download latest Photobooth release `photobooth-xxx.zip` (don't download the Source code) from the `Assets` [here](https://github.com/andreknieriem/photobooth/releases) and extract it.
 
-### Install dependencies
-To install all client dependencies you have to [install yarn](https://yarnpkg.com/lang/en/docs/install/#windows-stable).
-
-Once yarn is installed, run below commands in your Photobooth folder to install all client depencies:
-```
-git submodule update --init
-yarn install
-yarn build
-```
+- Download [digiCamControl](http://digicamcontrol.com/) and extract the archive into `digicamcontrol` inside the photobooth root folder, e.g. `D:\xampp\htdocs\photobooth\digicamcontrol`
