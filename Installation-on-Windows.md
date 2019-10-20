@@ -5,6 +5,10 @@
 
   Recommend: [XAMPP](http://www.apachefriends.org/en/xampp.html) (Apache + MariaDB + PHP + Perl)
 
+- Download and install [git](https://git-scm.com/downloads)
+
 - Download latest Photobooth release `photobooth-xxx.zip` (don't download the Source code) from the `Assets` [here](https://github.com/andreknieriem/photobooth/releases) and extract it.
 
 - Download [digiCamControl](http://digicamcontrol.com/) and extract the archive into `digicamcontrol` inside the photobooth root folder, e.g. `D:\xampp\htdocs\photobooth\digicamcontrol`
+
+- Inside your Photobooth source run `git submodule update --init` from command line to download needed submodules.
