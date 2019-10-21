@@ -37,7 +37,7 @@ You can change the language inside ```config/my.config.inc.php``` or via Admin P
 
 
 ### How to keep pictures on my Camera using gphoto2?
-Add `--keep` option for gphoto2 in `config/my.config.inc.php`:
+Add `--keep` (or `--keep-raw` to keep only the raw version on camera) option for gphoto2 in `config/my.config.inc.php`:
 ```
 	$config['take_picture']['cmd'] = 'gphoto2 --capture-image-and-download --keep --filename=%s';
 ```
