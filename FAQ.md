@@ -15,6 +15,8 @@ Pi Camera works with these config changes.
 Raspistill does not give any feedback after the picture was taken, workaround for that with "echo".
 (Thanks to Andreas Maier for that information)
 
+You've the possibility to add more parameters if needed (define ISO, exposure, white balance etc.). Type `raspistill -?` in your terminal to get information about possible parameters / settings.
+
 
 ### I've found a bug, how can I report?
 Please take a look at the issue page [here](https://github.com/andreknieriem/photobooth/issues) , if your bug isn't mentioned already you can create a new issue. Please give informations detailed as possible to reproduce and analyse the problem.
