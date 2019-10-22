@@ -1,5 +1,8 @@
 ### Changelog
 
+#### 2.0.2:
+- fix saving of chroma keying results, style for chroma keying, style of gallery caption, datetime string on images without date info
+
 #### 2.0.1:
 - fix deletion of db file, fix config changes via admin settings
 
