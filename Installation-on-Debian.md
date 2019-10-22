@@ -1,5 +1,13 @@
 ## Installation on Raspbian:
-The steps below were tested on "Raspbian Buster with desktop".
+To make the installation as simple as possible, we have created an installation script for you. It will setup your Raspberry Pi as a full blown Photobooth. This means, Photobooth is started in fullscreen on startup and the automatic camera mount is disabled. If you encounter any issues or want more freedom to configure your Pi, we recommend you look at the detailed installation instruction below.
+
+```
+wget https://raw.githubusercontent.com/andreknieriem/photobooth/master/install-raspbian.sh
+sudo bash install-raspbian.sh
+```
+
+## Installation on Debian / Debian based distributions:
+The steps below were tested on "Raspbian Buster with desktop", but should work for all Debian and Debian based distributions. Photobooth can also be used on any other PC/Laptop running a supported OS.
 
 ### Update your system
 ```
@@ -78,7 +86,3 @@ Now try again.
 
 If everything is working, open the IP address (you get it via `ip addr`) of your Raspberry Pi, or if you open it on your machine, type `localhost` in your browser.
 
-
-## Installation on Debian / Debian based distributions:
-Above installation instructions should work for all Debian and Debian based distributions.
-Photobooth can also be used on any other PC/Laptop running a supported OS.
