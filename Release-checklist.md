@@ -7,7 +7,7 @@
 - create commit (`git commit -am "bump version to vX.X.X"`)
 - create (signed) tag (`git tag -s -a vX.X.X -m "tag vX.X.X"`)
 - pack build by calling `node scripts/pack-build.js`
-- push commit and tag (`git push origin --tags`)
+- push commit and tag (`git push origin && git push origin --tags`)
 - update changelog in [wiki](https://github.com/andreknieriem/photobooth/wiki/Changelog)
 - create release from tag on Github and attach archives (zip and tar)
 - party :tada: 
