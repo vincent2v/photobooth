@@ -6,12 +6,20 @@ Some DSLR and Compact Cameras are not supported by this project. Please check fo
 
 
 ### Is Pi Camera supported?
-Yes it is. You need to adjust the config:
+Yes it is.
+
+First we need to allow our webserver to use `raspistill`. We need add our webserver user to `video` group and reboot once:
 ```
-$config['take_picture']['cmd'] = 'raspistill -n -o $(date +%s) -q 100 -t 1 | echo Done';
+sudo gpasswd -a www-data video
+reboot
+```
+
+Next you need to adjust the config:
+```
+$config['take_picture']['cmd'] = 'raspistill -n -o %s -q 100 -t 1 | echo Done';
 $config['take_picture']['msg'] = 'Done';
 ```
-Pi Camera works with these config changes.
+Pi Camera works with these config changes (also works together with preview at countdown if enabled).
 Raspistill does not give any feedback after the picture was taken, workaround for that with "echo".
 (Thanks to Andreas Maier for that information)
 
