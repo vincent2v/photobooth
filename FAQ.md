@@ -116,6 +116,9 @@ and add ```--touch-events=enabled``` for Chromium:
 
 
 #### How to hide the Mouse Cursor?
+There are two options to hide the cursor. The first approach allows you to show the cursor for a short period of time (helpful if you use a mouse and just want to hide the cursor of some time of inactivity), or to hide it permanently.
+
+**Solution A**
 To hide the Mouse Cursor we'll use "unclutter":
 ```
 sudo apt-get install unclutter
@@ -124,11 +127,13 @@ Edit the LXDE Autostart Script again:
 ```
 sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
 ```
-and add the following line:
+and add the following line (0 describes the time after which the cursor should be hidden):
 ```
 @unclutter -idle 0
 ```
 
+**Solution B**
+If you are using LightDM as display manager, you can edit `/etc/lightdm/lightdm.conf` to hide the cursor permanently. Just add `xserver-command=X -nocursor` to the end of the file.
 
 ### How to disable the blank screen on Raspberry Pi (Raspbian)?
 You can follow the instructions [here](https://www.geeks3d.com/hacklab/20160108/how-to-disable-the-blank-screen-on-raspberry-pi-raspbian/) to disable the blank screen.
