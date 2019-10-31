@@ -58,7 +58,13 @@ Next we have to give our webserver user access to the USB device:
 sudo gpasswd -a www-data plugdev
 ```
 
-If you like to use the printer you also have to add your webserver user to the `lp` group:
+If you like to use a printer you need to have `CUPS` installed. On Raspbian `CUPS` is not installed by default:
+
+```
+sudo apt install -y cups
+```
+
+Next you also have to add your webserver user to the `lp` group:
 
 ```
 sudo gpasswd -a www-data lp
