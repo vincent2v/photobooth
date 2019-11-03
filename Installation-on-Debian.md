@@ -17,24 +17,24 @@ sudo apt dist-upgrade
 
 ### Install a Webserver
 Currently Apache and NGINX Webserver are supported.
-Nginx has a smaller memory footprint and typically better performance, which is especially important on the Raspberry Pis, but it needs some additional steps until you're good to go.
+NGINX has a smaller memory footprint and typically better performance, which is especially important on the Raspberry Pis, but it needs some additional steps until you're good to go.
 
 #### Install Apache & PHP
 ```
 sudo apt install -y libapache2-mod-php
 ```
 
-#### or Install Nginx & PHP
+#### or Install NGINX & PHP
 ```
 sudo apt install -y nginx php-fpm
 ```
-<details><summary><b>Additional needed steps for Nginx</b></summary>
+<details><summary><b>Additional needed steps for NGINX</b></summary>
 
 Now we need to start the server with:
 ```
 sudo /etc/init.d/nginx start
 ```
-Once Nginx is installed we need to enable PHP in Nginx:
+Once NGINX is installed we need to enable PHP in NGINX:
 ```
 sudo nano /etc/nginx/sites-enabled/default
 ```
