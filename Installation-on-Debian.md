@@ -34,7 +34,17 @@ Now we need to start the server with:
 ```
 sudo /etc/init.d/nginx start
 ```
-Once NGINX is installed we need to enable PHP in NGINX:
+Once NGINX is installed we need to enable PHP in NGINX. If you haven't made any changes to your NGINX config you can run the following commands:
+```
+sudo cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
+sudo sed -i 's/^\(\s*\)index index\.html\(.*\)/\1index index\.php index\.html\2/g' /etc/nginx/sites-available/default
+sudo sed -i '/location ~ \\.php$ {/s/^\(\s*\)#/\1/g' /etc/nginx/sites-available/default
+sudo sed -i '/include snippets\/fastcgi-php.conf/s/^\(\s*\)#/\1/g' /etc/nginx/sites-available/default
+sudo sed -i '/fastcgi_pass unix:\/run\/php\//s/^\(\s*\)#/\1/g' /etc/nginx/sites-available/default
+sudo sed -i '/.*fastcgi_pass unix:\/run\/php\//,// { /}/s/^\(\s*\)#/\1/g; }' /etc/nginx/sites-available/default
+```
+
+If you've made changes by hand already to `/etc/nginx/nginx.conf` you have to do all changes by hand:
 ```
 sudo nano /etc/nginx/sites-enabled/default
 ```
@@ -66,7 +76,15 @@ It should look like this:
         }
 ```
 
-Now we need to restart the server with:
+Now test the config:
+```
+/usr/sbin/nginx -t -c /etc/nginx/nginx.conf &>/dev/null && echo 'config test ok' || echo 'config test failed'
+```
+If you get the response
+```bash
+'config test ok'
+```
+then it is time to restart the server with:
 ```
 sudo /etc/init.d/nginx restart
 ```
