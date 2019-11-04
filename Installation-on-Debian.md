@@ -72,7 +72,8 @@ It should look like this:
         }
 ```
 
-Now test the config:
+
+Test the config once `/etc/nginx/sites-enabled/default` was changed:
 ```
 sudo /usr/sbin/nginx -t -c /etc/nginx/nginx.conf &>/dev/null && echo 'config test ok' || echo 'config test failed'
 ```
