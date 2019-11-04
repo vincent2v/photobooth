@@ -28,12 +28,8 @@ sudo apt install -y libapache2-mod-php
 ```
 sudo apt install -y nginx php-fpm
 ```
-<details><summary><b>Additional needed steps for NGINX</b></summary>
+<details><summary><b>Additional needed steps to enable PHP in NGINX</b></summary>
 
-Now we need to start the server with:
-```
-sudo /etc/init.d/nginx start
-```
 Once NGINX is installed we need to enable PHP in NGINX. If you haven't made any changes to your NGINX config you can run the following commands:
 ```
 sudo cp /etc/nginx/sites-enabled/default ~/nginx-default.bak
@@ -86,7 +82,7 @@ If you get the response
 ```
 then it is time to restart the server with:
 ```
-sudo /etc/init.d/nginx restart
+sudo systemctl reload nginx
 ```
 </details>
 
