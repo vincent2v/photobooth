@@ -78,7 +78,7 @@ It should look like this:
 
 Now test the config:
 ```
-/usr/sbin/nginx -t -c /etc/nginx/nginx.conf &>/dev/null && echo 'config test ok' || echo 'config test failed'
+sudo /usr/sbin/nginx -t -c /etc/nginx/nginx.conf &>/dev/null && echo 'config test ok' || echo 'config test failed'
 ```
 If you get the response
 ```bash
