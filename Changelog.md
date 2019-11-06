@@ -1,5 +1,16 @@
 ### Changelog
 
+#### Upcoming Release
+- new options:
+  - Make collage countdown timer adjustable
+  - enable/disable real error messages
+  - Allow setting a default filter
+  - JPEG quality configurable
+- admin panel:
+  - change weeding config to event config and add several new symbols to choose
+  - own printer submenu
+- Added raspi reset script
+
 #### 2.0.2:
 - fix saving of chroma keying results, style for chroma keying, style of gallery caption, datetime string on images without date info
 
