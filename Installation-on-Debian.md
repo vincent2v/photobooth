@@ -135,10 +135,11 @@ If you like to use a printer you need to have `CUPS` installed. On Raspbian `CUP
 sudo apt install -y cups
 ```
 
-Next you also have to add your webserver user to the `lp` group:
+Next you also have to add your webserver user to the `lp` and `lpadmin` group:
 
 ```
 sudo gpasswd -a www-data lp
+sudo gpasswd -a www-data lpadmin
 ```
 
 Now you should restart your Raspberry Pi to apply those settings:
