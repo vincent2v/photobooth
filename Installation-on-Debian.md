@@ -91,7 +91,9 @@ sudo systemctl reload nginx
 ```
 sudo apt install -y lighttpd php-fpm
 ```
+
 <details><summary><b>Additional needed steps to enable PHP in Lighttpd</b></summary>
+
 ```
 sudo lighttpd-enable-mod fastcgi
 sudo lighttpd-enable-mod fastcgi-php
