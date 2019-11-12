@@ -5,6 +5,10 @@ To make the installation as simple as possible, we have created an installation 
 wget https://raw.githubusercontent.com/andreknieriem/photobooth/master/install-raspbian.sh
 sudo bash install-raspbian.sh
 ```
+By default NGINX is used as a lightweight Webserver.
+To use Apache run `sudo bash install-raspbian.sh apache` ,
+To use Lighttpd aus Webserver run `sudo bash install-raspbian.sh lighttpd`.
+
 
 ## Installation on Debian / Debian based distributions:
 The steps below were tested on "Raspbian Buster with desktop", but should work for all Debian and Debian based distributions. Photobooth can also be used on any other PC/Laptop running a supported OS.
