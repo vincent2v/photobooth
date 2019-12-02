@@ -5,11 +5,19 @@
   - Make collage countdown timer adjustable
   - enable/disable real error messages
   - Allow setting a default filter
+  - allow to disable filter
   - JPEG quality configurable
+  - enable/disable download button in gallery
 - admin panel:
   - change weeding config to event config and add several new symbols to choose
   - own printer submenu
 - Added raspi reset script
+- allow to abort collage creation
+- improve installation script
+  - make kiosk mode optional
+  - don't delete /var/www/html without request
+  - use NGINX by default, optional allow to install Apache or Lighttpd
+  - fix printer permissions and install CUPS by default
 
 #### 2.0.2:
 - fix saving of chroma keying results, style for chroma keying, style of gallery caption, datetime string on images without date info
