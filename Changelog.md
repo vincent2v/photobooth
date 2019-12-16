@@ -8,6 +8,9 @@
   - allow to disable filter
   - JPEG quality configurable
   - enable/disable download button in gallery
+  - Allow defining a background via admin panel:
+    This also gives the possibility to define a livestream URL (e.g. http://192.168.239.77:8081
+    if motion is used ) to use a livestream as background.
 - admin panel:
   - change weeding config to event config and add several new symbols to choose
   - own printer submenu
