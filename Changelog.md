@@ -11,6 +11,15 @@
   - Allow defining a background via admin panel:
     This also gives the possibility to define a livestream URL (e.g. http://192.168.239.77:8081
     if motion is used ) to use a livestream as background.
+  - Allow admins to choose what gets deleted at reset (inspired by https://github.com/andreknieriem/photobooth/issues/178)
+    - always:
+      - delete db.txt
+    - optional (but enabled by default):
+      - delete images
+      - delete "mail-addresses.txt
+      - delete personal config (my.config.inc.php)
+  - Add possibility to choose dark countdown background (inspired by https://github.com/andreknieriem/photobooth/issues/198 )
+  - Allow defining Photobooth web server IP to fix image download via QR-Code if Photobooth is accessed via localhost/127.0.0.1
 - admin panel:
   - change weeding config to event config and add several new symbols to choose
   - own printer submenu
@@ -21,6 +30,9 @@
   - don't delete /var/www/html without request
   - use NGINX by default, optional allow to install Apache or Lighttpd
   - fix printer permissions and install CUPS by default
+- README: update formatting and cleanup
+- Fix undefined placeholder warnings
+- take picture: red error messages
 
 #### 2.0.2:
 - fix saving of chroma keying results, style for chroma keying, style of gallery caption, datetime string on images without date info
