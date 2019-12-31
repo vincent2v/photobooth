@@ -71,8 +71,8 @@ Choice: 1 Memory card
 ```
 
 
-## Croma Key is saving without finishing saving
-Checking the browser console you'll see a `413 Request Entity Too Large` error. To fix that you'll have to update you nginx.conf
+## Cromakeying is saving without finishing saving
+Checking the browser console you'll see a `413 Request Entity Too Large` error. To fix that you'll have to update your nginx.conf
 
 Follow the steps mentioned here: [How to Fix NGINX 413 Request Entity Too Large Error](https://datanextsolutions.com/blog/how-to-fix-nginx-413-request-entity-too-large-error/)
 
