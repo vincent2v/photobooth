@@ -71,6 +71,12 @@ Choice: 1 Memory card
 ```
 
 
+## Croma Key is saving without finishing saving
+Checking the browser console you'll see a `413 Request Entity Too Large` error. To fix that you'll have to update you nginx.conf
+
+Follow the steps mentioned here: [How to Fix NGINX 413 Request Entity Too Large Error](https://datanextsolutions.com/blog/how-to-fix-nginx-413-request-entity-too-large-error/)
+
+
 ### Can I use Hardware Button to take a Picture on my Raspberry Pi?
 You can use a hardware button connected on GPIO24 to trigger a photo. Set `$config['photo_key']` to e.g. `13` (enter key) or use the Admin panel to specify the key. Next you have to install some dependencies:
 
@@ -146,12 +152,12 @@ sudo apt-get install motion
 ```
 Also a Webcam is required and /etc/motion/motion.conf needs to be changed to your needs (e.g. starting on boot, using videoX, resolution etc.).
 
-Once this is done you need to change the background URL path inside the style.css, search and replace `../img/bg.jpg`. Example:
+Once this is done you need to change the background URL path via config or admin panel. Replace `url(../img/bg.jpg)` with your IP as URL. 
+Example:
 ```
--   background-image: url(../img/bg.jpg);
-+   background-image: url(http://127.0.0.1:8081);
+-   url(../img/bg.jpg)
++   url(http://127.0.0.1:8081)
 ```
-(For blue-gray theme also replace `bg_bluegray.jpg`).
 
 If you're accessing Photobooth from an external device (e.g. Tablet or Mobile Phone) replace `127.0.0.1` with your IP-Adress.
 
