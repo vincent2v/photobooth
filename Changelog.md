@@ -35,6 +35,7 @@
 - README: update formatting and cleanup
 - Fix undefined placeholder warnings
 - take picture: red error messages
+- choose a filter after picture was taken instead before
 
 #### 2.0.2:
 - fix saving of chroma keying results, style for chroma keying, style of gallery caption, datetime string on images without date info
