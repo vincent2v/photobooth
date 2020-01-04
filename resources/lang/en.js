@@ -305,5 +305,7 @@ const L10N = {
     'manual_user_interface_background_image': 'CSS Style for background on start-, login- and slideshow pages. For example you can define a "url" or a color.',
     'manual_user_interface_font_size': 'Enter the default fontsize used for the Photobooth interface.',
     'show_wiki': 'Open Wiki (internet connection required)',
-    'previewCamBackground': 'Use stream from device cam as background'
+    'previewCamBackground': 'Use stream from device cam as background',
+    'general_db_file': 'Database file name',
+    'manual_general_db_file': 'Name of the database file.'
 }

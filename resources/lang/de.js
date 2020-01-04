@@ -189,5 +189,6 @@ const L10N = {
     'randomPicture': 'Zufällige Bilder anzeigen',
     'use_thumbs': 'Thumbnails für die Diashow verwenden',
     'preserve_exif_data': 'Exif-Daten erhalten',
-    'previewCamBackground': 'Stream der Gerätekamera als Hintergrund nutzen'
+    'previewCamBackground': 'Stream der Gerätekamera als Hintergrund nutzen',
+    'general_db_file': 'Name der Datenbankdatei'
 }
