@@ -70,7 +70,7 @@ const L10N = {
     'commands': 'Commands',
     'reset': 'Reset',
     'remove_images': 'Delete images',
-    'remove_mailtxt': 'Delete "mail-addresses.txt"',
+    'remove_mailtxt': 'Delete e-mail addresses database',
     'remove_config': 'Delete personal configuration (my.config.inc.php)',
     'language': 'Choose Language',
     'dev': 'Dev-Mode',
@@ -307,5 +307,7 @@ const L10N = {
     'show_wiki': 'Open Wiki (internet connection required)',
     'previewCamBackground': 'Use stream from device cam as background',
     'general_db_file': 'Database file name',
-    'manual_general_db_file': 'Name of the database file.'
+    'manual_general_db_file': 'Name of the database file.',
+    'mail_file': 'File name e-mail addresses database',
+    'manual_mail_file': 'File name for the e-mail addresses database.'
 }

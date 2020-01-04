@@ -70,7 +70,7 @@ const L10N = {
     'commands': 'Befehle',
     'reset': 'Zurücksetzen',
     'remove_images': 'Bilder löschen',
-    'remove_mailtxt': '"mail-addresses.txt" löschen',
+    'remove_mailtxt': 'E-Mail-Adressen-Datenbankdatei löschen',
     'remove_config': 'Persönliche Konfiguration löschen (my.config.inc.php)',
     'language': 'Sprache wählen',
     'dev': 'Entwicklungs-Modus',
@@ -190,5 +190,6 @@ const L10N = {
     'use_thumbs': 'Thumbnails für die Diashow verwenden',
     'preserve_exif_data': 'Exif-Daten erhalten',
     'previewCamBackground': 'Stream der Gerätekamera als Hintergrund nutzen',
-    'general_db_file': 'Name der Datenbankdatei'
+    'general_db_file': 'Name der Datenbankdatei',
+    'mail_file': 'Name der E-Mail-Adressen-Datenbankdatei'
 }
