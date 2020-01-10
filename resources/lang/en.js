@@ -1,5 +1,9 @@
 /* exported L10N */
 const L10N = {
+    'milliseconds': 'milliseconds',
+    'seconds': 'second(s)',
+    'degrees': '°',
+    'percent': '%',
     'toggleFullscreen': 'Toggle Fullscreen',
     'toggle_fs_button': 'Show button to toggle fullscreen',
     'general_camera_mode': 'Camera facing mode',

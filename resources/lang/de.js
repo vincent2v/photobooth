@@ -1,5 +1,9 @@
 /* exported L10N */
 const L10N = {
+    'milliseconds': 'Millisekunden',
+    'seconds': 'Sekunde(n)',
+    'degrees': '°',
+    'percent': '%',
     'toggleFullscreen': 'Vollbildmodus umschalten',
     'toggle_fs_button': 'Taste zum Umschalten auf Vollbildmodus anzeigen',
     'general_camera_mode': 'Kamerabildmodus',
