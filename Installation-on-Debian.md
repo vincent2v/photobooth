@@ -7,7 +7,7 @@ sudo bash install-raspbian.sh
 ```
 By default NGINX is used as a lightweight Webserver.
 To use Apache run `sudo bash install-raspbian.sh apache` ,
-To use Lighttpd aus Webserver run `sudo bash install-raspbian.sh lighttpd`.
+To use Lighttpd as Webserver run `sudo bash install-raspbian.sh lighttpd`.
 
 
 ## Installation on Debian / Debian based distributions:
