@@ -37,6 +37,8 @@
 - take picture: red error messages
 - choose a filter after picture was taken instead before
 - Display collage count before taking photo
+- allow protection of admin panel and index with password
+- allow using device cam to take pictures (save origin (localhost/127.0.0.1 if accessed on server, else HTTPS) needed!
 
 #### 2.0.2:
 - fix saving of chroma keying results, style for chroma keying, style of gallery caption, datetime string on images without date info
