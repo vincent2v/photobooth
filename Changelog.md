@@ -22,7 +22,12 @@
   - Allow defining Photobooth web server IP to fix image download via QR-Code if Photobooth is accessed via localhost/127.0.0.1
   - Allow choosing a frame at take pic
   - Frames and font adjustable
-- admin panel:
+  - allow protection of admin panel and index with password
+  - allow using device cam to take pictures (save origin (localhost/127.0.0.1 if accessed on server, else HTTPS) needed!
+  - define Photobooth colors using colorpicker
+  - allow more elements to change color
+  - allow defining default font size
+- admin panel style:
   - change weeding config to event config and add several new symbols to choose
   - own printer submenu
 - Added raspi reset script
@@ -37,8 +42,6 @@
 - take picture: red error messages
 - choose a filter after picture was taken instead before
 - Display collage count before taking photo
-- allow protection of admin panel and index with password
-- allow using device cam to take pictures (save origin (localhost/127.0.0.1 if accessed on server, else HTTPS) needed!
 
 #### 2.0.2:
 - fix saving of chroma keying results, style for chroma keying, style of gallery caption, datetime string on images without date info
