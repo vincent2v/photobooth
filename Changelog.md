@@ -18,7 +18,6 @@
       - delete images
       - delete "mail-addresses.txt
       - delete personal config (my.config.inc.php)
-  - Add possibility to choose dark countdown background (inspired by https://github.com/andreknieriem/photobooth/issues/198 )
   - Allow defining Photobooth web server IP to fix image download via QR-Code if Photobooth is accessed via localhost/127.0.0.1
   - Allow choosing a frame at take pic
   - Frames and font adjustable
