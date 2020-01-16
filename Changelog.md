@@ -4,6 +4,11 @@
 *Nothing for now*
 
 #### 2.1.0
+##### Optimize performance:
+- separate trigger and post-process task
+- if possible use faster method to resize a picture
+
+##### Many new features and options added:
 - new options:
   - Make collage countdown timer adjustable
   - enable/disable real error messages
@@ -40,11 +45,14 @@
   - don't delete /var/www/html without request
   - use NGINX by default, optional allow to install Apache or Lighttpd
   - fix printer permissions and install CUPS by default
+
+##### General changes:
 - README: update formatting and cleanup
 - Fix undefined placeholder warnings
 - take picture: red error messages
 - choose a filter after picture was taken instead before
 - Display collage count before taking photo
+- Handle take photo error cases
 
 #### 2.0.2:
 - fix saving of chroma keying results, style for chroma keying, style of gallery caption, datetime string on images without date info
