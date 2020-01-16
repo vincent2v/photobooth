@@ -1,6 +1,9 @@
 ### Changelog
 
 #### Upcoming Release
+*Nothing for now*
+
+#### 2.1.0
 - new options:
   - Make collage countdown timer adjustable
   - enable/disable real error messages
