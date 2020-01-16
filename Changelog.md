@@ -26,6 +26,7 @@
   - define Photobooth colors using colorpicker
   - allow more elements to change color
   - allow defining default font size
+  - optional rounded edges style
 - admin panel style:
   - change weeding config to event config and add several new symbols to choose
   - own printer submenu
