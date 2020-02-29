@@ -43,7 +43,7 @@ View all version changes [here](changelog).
 ## Clone this Wiki
 Get a copy of this Wiki to always have the FAQ, Changelog etc. with you. Run the following command from your Terminal:
 
-`git clone https://github.com/andreknieriem/photobooth.wiki.git`
+`git clone https://github.com/andi34/photobooth.wiki.git`
 
 To update your local Wiki copy with latest changes you only need to run `git pull` from Terminal.
 

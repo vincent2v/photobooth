@@ -27,7 +27,7 @@ You've the possibility to add more parameters if needed (define ISO, exposure, w
 
 
 ### I've found a bug, how can I report?
-Please take a look at the issue page [here](https://github.com/andreknieriem/photobooth/issues) , if your bug isn't mentioned already you can create a new issue. Please give informations detailed as possible to reproduce and analyse the problem.
+Please take a look at the issue page [here](https://github.com/andi34/photobooth/issues) , if your bug isn't mentioned already you can create a new issue. Please give informations detailed as possible to reproduce and analyse the problem.
 
 
 ### I've a white page after updating to latest Source, how can I solve this?

@@ -8,6 +8,6 @@
 - create (signed) tag (`git tag -s -a vX.X.X -m "tag vX.X.X"`)
 - pack build by calling `node scripts/pack-build.js`
 - push commit and tag (`git push origin && git push origin --tags`)
-- update changelog in [wiki](https://github.com/andreknieriem/photobooth/wiki/Changelog)
+- update changelog in [wiki](https://github.com/andi34/photobooth/wiki/Changelog)
 - create release from tag on Github and attach archives (zip and tar: `yarn pack:build`)
 - party :tada: 

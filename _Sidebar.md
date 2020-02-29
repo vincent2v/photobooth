@@ -1,5 +1,5 @@
-[Home](https://github.com/andreknieriem/photobooth/wiki)
+[Home](https://github.com/andi34/photobooth/wiki)
 
-[Installation](https://github.com/andreknieriem/photobooth/wiki#installation)
+[Installation](https://github.com/andi34/photobooth/wiki#installation)
 
-[FAQ - Frequently asked questions](https://github.com/andreknieriem/photobooth/wiki/FAQ)
+[FAQ - Frequently asked questions](https://github.com/andi34/photobooth/wiki/FAQ)
