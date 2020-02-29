@@ -1,7 +1,8 @@
 ### Changelog
 
 #### Upcoming Release
-*Nothing for now*
+**New Options**
+- Rotate photo after taking
 
 #### 2.2.0
 **General changes**
