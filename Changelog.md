@@ -3,6 +3,26 @@
 #### Upcoming Release
 *Nothing for now*
 
+#### 2.2.0
+**General changes**
+- install-raspbian: use Apache2 webserver by default again
+- added Slideshow option to Gallery
+- standalone slideshow [localhost/slideshow](http://localhost/slideshow)
+- access login via [localhost/login](http://localhost/login) instead [localhost/login.php](http://localhost/login.php)
+- fix windows compatibility
+- fix check for image filter
+- performance improvement (https://github.com/andreknieriem/photobooth/pull/226)
+- Improved width of admin- and login-panel (partially https://github.com/andreknieriem/photobooth/pull/221)
+- general bug-fixes if device cam is used to take pictures (https://github.com/andreknieriem/photobooth/pull/220)
+
+**New options**
+- Option to disable the delete button (https://github.com/andreknieriem/photobooth/pull/228)
+- Option to keep original images in tmp folder
+- Configurable image preview while post-processing
+- Adjustable time a image is shown after capture
+- Optional EXIF data preservation (disabled by default)
+
+
 #### 2.1.0
 **Optimize performance:**
 - separate trigger and post-process task
