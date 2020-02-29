@@ -146,19 +146,20 @@ You can follow the instructions [here](https://www.geeks3d.com/hacklab/20160108/
 
 
 ### Can I use a live stream as background?
-Yes you can. Motion is required!
-```
-sudo apt-get install motion
-```
-Also a Webcam is required and /etc/motion/motion.conf needs to be changed to your needs (e.g. starting on boot, using videoX, resolution etc.).
+Yes you can.
 
-Once this is done you need to change the background URL path via config or admin panel. Replace `url(../img/bg.jpg)` with your IP as URL. 
+You need to change the background URL path via config or admin panel. Replace `url(../img/bg.jpg)` with your IP as URL.
 Example:
 ```
 -   url(../img/bg.jpg)
 +   url(http://127.0.0.1:8081)
 ```
 
+To use a Raspberry Pi Camera module Motion is required, but you won't be able to use the Raspberry Pi Camera for preview at countdown!
+```
+sudo apt-get install -y motion
+```
+/etc/motion/motion.conf needs to be changed to your needs (e.g. starting on boot, using videoX, resolution etc.).
 If you're accessing Photobooth from an external device (e.g. Tablet or Mobile Phone) replace `127.0.0.1` with your IP-Adress.
 
 For reference:
