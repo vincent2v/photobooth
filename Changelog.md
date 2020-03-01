@@ -5,7 +5,7 @@
 
 #### 2.2.1
 **New Options**
-- Rotate photo after taking
+- Allow to rotate photo after taking
 - Allow using a stream from URL at countdown for preview
 
 **General changes**
