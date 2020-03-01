@@ -3,6 +3,12 @@
 #### Upcoming Release
 **New Options**
 - Rotate photo after taking
+- Allow using a stream from URL at countdown for preview
+
+**General changes**
+- Remove unused resources/fonts/style.css
+- language: use correkt ISO 639-1 Language Code for Greek
+- Optimize picture size on result screen
 
 #### 2.2.0
 **General changes**
