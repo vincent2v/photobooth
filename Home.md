@@ -27,6 +27,7 @@ A Photobooth webinterface for Raspberry Pi and Windows.
 * **Q:** [Can I use Hardware Button to take a Picture on my Raspberry Pi?](FAQ#can-i-use-hardware-button-to-take-a-picture-on-my-raspberry-pi)
 * **Q:** [How do I enable Kiosk Mode to automatically start Photobooth in full screen?](FAQ#how-do-i-enable-kiosk-mode-to-automatically-start-photobooth-in-full-screen)
 * **Q:** [How to disable the blank screen on Raspberry Pi (Raspbian)?](FAQ#how-to-disable-the-blank-screen-on-raspberry-pi-raspbian)
+* **Q:** [How to use a live stream as background at countdown?](FAQ#how-to-use-a-live-stream-as-background-at-countdown)
 * **Q:** [Can I use a live stream as background?](FAQ#can-i-use-a-live-stream-as-background)
 * **Q:** [I've trouble setting up E-Mail config. How do I solve my problem?](FAQ#ive-trouble-setting-up-e-mail-config-how-do-i-solve-my-problem)
 * **Q:** [How to only open the gallery to avoid people taking pictures](FAQ#how-to-only-open-the-gallery-to-avoid-people-taking-pictures)

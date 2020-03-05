@@ -141,14 +141,39 @@ and add the following line (0 describes the time after which the cursor should b
 **Solution B**
 If you are using LightDM as display manager, you can edit `/etc/lightdm/lightdm.conf` to hide the cursor permanently. Just add `xserver-command=X -nocursor` to the end of the file.
 
+
 ### How to disable the blank screen on Raspberry Pi (Raspbian)?
 You can follow the instructions [here](https://www.geeks3d.com/hacklab/20160108/how-to-disable-the-blank-screen-on-raspberry-pi-raspbian/) to disable the blank screen.
+
+
+### How to use a live stream as background at countdown?
+There's different ways depending on your needs and personal setup:
+
+1. If you access Photobooth on your Raspberry Pi you could use a Raspberry Pi Camera. Raspberry Pi Camera will be detected as "device cam".
+    - Admin panel config "See preview by device cam": `true`
+
+    **Note:**
+    - Preview by "device cam" will always use the camera of the device where Photobooth get opened in a Browser (e.g. on a tablet it will always show the tablet camera while on a smartphone it will always show the smartphone camera instead)!
+    - Secure origin or exception required!
+      - [Prefer Secure Origins For Powerful New Features](https://medium.com/@Carmichaelize/enabling-the-microphone-camera-in-chrome-for-local-unsecure-origins-9c90c3149339)
+      - [Enabling the Microphone/Camera in Chrome for (Local) Unsecure Origins](https://www.chromium.org/Home/chromium-security/prefer-secure-origins-for-powerful-new-features)
+    - Admin panel config *"Device cam takes picture"* can be used to take a picture from this preview instead using gphoto / digicamcontrol / raspistill.
+
+2. If you like to have the same preview independent of the device you access Photobooth from:
+    - Make sure to have a stream available you can use (e.g. from your Webcam, Smartphone Camera or Raspberry Pi Camera)
+    - Admin panel config *"Preview from URL"*: `true`
+    - Admin panel config *"Preview-URL"*: `url(http://127.0.0.1:8081)`
+
+    **Note**
+    - Do NOT enable *"Device cam takes picture"* in admin panel config!
+    - Capture pictures via `raspistill` won't work if motion is installed!
+    - Requires Photobooth v2.2.1 or later!
 
 
 ### Can I use a live stream as background?
 Yes you can.
 
-You need to change the background URL path via config or admin panel. Replace `url(../img/bg.jpg)` with your IP as URL.
+You need to change the background URL path via config or admin panel. Replace `url(../img/bg.jpg)` with your IP-Adress and port (if needed) as URL.
 Example:
 ```
 -   url(../img/bg.jpg)
@@ -194,13 +219,13 @@ Open [http://localhost/gallery.php](http://localhost/gallery.php) in your browse
 
 
 ### Chromakeying isn't working if I access the Photobooth page on my Raspberry Pi, but it works if I access Photobooth from an external device (e.g. mobile phone or tablet). How can I solve the problem?
-Open ```chrome://flags``` in your browser.
-Look for *"Accelerated 2D canvas"* and change it to ```"disabled"```.
+Open `chrome://flags` in your browser.
+Look for *"Accelerated 2D canvas"* and change it to `"disabled"`.
 Now restart your Chromium browser.
 
 
 ### How to ajust the ```php.ini``` file?
-Open http://localhost/phpinfo.php in your browser.
+Open [http://localhost/phpinfo.php](http://localhost/phpinfo.php) in your browser.
 Take a look for "Loaded Configuration File", you need  sudo rights to edit the file.
 Page will look like this:
 <details><summary>CLICK ME</summary>
