@@ -1,4 +1,5 @@
 <?php
+// vince//
 session_start();
 
 require_once('lib/config.php');
