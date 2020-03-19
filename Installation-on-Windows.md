@@ -1,5 +1,5 @@
 ## Installation on Windows
-**_Instructions not complete. If you like to help documenting proper instructions for Windows please use the issue [here](https://github.com/andreknieriem/photobooth/issues/121) to let us know._**
+**_NOTE: help needed to further explain the required steps in this section. If you are taking this path, please consider editing this wiki. Please use the issue [here](https://github.com/andreknieriem/photobooth/issues/121) to let us know._**
 
 - Make sure you've [Apache Server](https://httpd.apache.org/docs/2.4/platform/windows.html) and [PHP](https://www.php.net/manual/de/install.windows.php) installed.
 
