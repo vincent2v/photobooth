@@ -5,7 +5,7 @@ To make the installation as simple as possible, we have created an installation 
 wget https://raw.githubusercontent.com/andi34/photobooth/master/install-raspbian.sh
 sudo bash install-raspbian.sh
 ```
-By default Apache is used by default for a easy an no-hassle setup as NGINX and Lighttpd need some additional steps.
+By default Apache is used for a easy an no-hassle setup as NGINX and Lighttpd need some additional steps.
 To use NGINX run `sudo bash install-raspbian.sh nginx` (additional Setup note: [Cromakeying is saving without finishing saving](FAQ#cromakeying-is-saving-without-finishing-saving) ),
 To use Lighttpd as Webserver run `sudo bash install-raspbian.sh lighttpd`.
 
