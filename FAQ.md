@@ -162,7 +162,7 @@ There's different ways depending on your needs and personal setup:
 2. If you like to have the same preview independent of the device you access Photobooth from:
     - Make sure to have a stream available you can use (e.g. from your Webcam, Smartphone Camera or Raspberry Pi Camera)
     - Admin panel config *"Preview from URL"*: `true`
-    - Admin panel config *"Preview-URL"*: `url(http://127.0.0.1:8081)`
+    - Admin panel config *"Preview-URL"* example (add needed IP address instead): `url(http://127.0.0.1:8081)`
 
     **Note**
     - Do NOT enable *"Device cam takes picture"* in admin panel config!
