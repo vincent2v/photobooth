@@ -1,5 +1,7 @@
 /* exported L10N */
 const L10N = {
+    'toggleFullscreen': 'Vollbildmodus umschalten',
+    'toggle_fs_button': 'Taste zum Umschalten auf Vollbildmodus anzeigen',
     'general_camera_mode': 'Kamerabildmodus',
     'previewCamFlipHorizontal': 'Bild von der Gerätekamera horizontal spiegeln',
     'previewFromIPCam': 'Vorschau von URL',
