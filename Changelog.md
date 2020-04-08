@@ -1,7 +1,8 @@
 ### Changelog
 
 #### Upcoming Release
-*nothing for now*
+**General changes**
+- Fix placeholder for preview from stream URL
 
 #### 2.2.1
 **New Options**
