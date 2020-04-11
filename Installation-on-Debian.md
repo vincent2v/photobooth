@@ -2,7 +2,7 @@
 To make the installation as simple as possible, we have created an installation script for you. It will setup your Raspberry Pi (using Apache Webserver) as a full blown Photobooth. This means, Photobooth is started in fullscreen on startup and the automatic camera mount is disabled. If you encounter any issues or want more freedom to configure your Pi, we recommend you look at the detailed installation instruction below.
 
 ```
-wget https://raw.githubusercontent.com/andi34/photobooth/master/install-raspbian.sh
+wget https://raw.githubusercontent.com/andi34/photobooth/dev/install-raspbian.sh
 sudo bash install-raspbian.sh
 ```
 By default Apache is used for a easy an no-hassle setup as NGINX and Lighttpd need some additional steps.
