@@ -247,7 +247,7 @@ Make your translations:
 
 Press `CTRL + S` to save your changes (or click on `File` -> `Save`).
 
-Now upload you changes and create a [pull request](https://github.com/andi34/photobooth/pulls).
+Now upload your changes and create a [pull request](https://github.com/andi34/photobooth/pulls).
 
 ### How to ajust the ```php.ini``` file?
 Open [http://localhost/phpinfo.php](http://localhost/phpinfo.php) in your browser.
