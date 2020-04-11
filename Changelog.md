@@ -1,8 +1,14 @@
 ### Changelog
 
-#### Upcoming Release
+#### 2.3.0
 **General changes**
 - Fix placeholder for preview from stream URL
+- Switch to blue-gray color theme by default
+- Admin panel: switch to range config and use toggles instead checkboxes
+- Switch to `simple-translator` for translations, use english as fallback langauage if a translation is missing. This also gives the possibility to easily translate Photobooth. ( [How to update or add translations?](https://github.com/andi34/photobooth/wiki/FAQ#how-to-update-or-add-translations) )
+
+**New Options**
+- Show/Hide button to toggle fullscreen mode
 
 #### 2.2.1
 **New Options**
