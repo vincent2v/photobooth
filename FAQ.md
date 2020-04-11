@@ -223,6 +223,31 @@ Open `chrome://flags` in your browser.
 Look for *"Accelerated 2D canvas"* and change it to `"disabled"`.
 Now restart your Chromium browser.
 
+### How to update or add translations?
+Get i18n-editor v2.0.0-beta.1 [from here](https://github.com/jcbvm/i18n-editor/releases/tag/2.0.0-beta.1). The application requires java 8 to be installed on your system. You can get java 8 from [https://www.oracle.com](https://www.oracle.com/java/technologies/javase-jre8-downloads.html).
+
+- If you're on Windows you can install the application by running the `.exe` file. If you're on Mac you can use the application by running the `.app` file. If you're on Linux you can use the application by running the `.jar` file.
+
+If you are running i18n-editor the first time, you simply need to drag-and-drop the `lang` folder (inside your photobooth source inside the `resources` folder) into i18n-editor:
+
+![Screenshot_2020-04-06_11-42-03](https://user-images.githubusercontent.com/6080900/78545204-b24b5700-77fb-11ea-9439-b532e7f1ec4b.png)
+
+You could also click on `File` -> `New Project` -> `JSON Format ...` -> navigate into the `lang` folder -> click on `open`
+Now you get asked if you like to import found existing translations -> confirm clicking on `yes`:
+
+<details><summary>CLICK ME</summary>
+<img src="https://user-images.githubusercontent.com/6080900/78545710-88defb00-77fc-11ea-81c4-fe3096040754.png">
+</details>
+
+Make your translations:
+
+<details><summary>CLICK ME</summary>
+<img src="https://user-images.githubusercontent.com/6080900/78545328-ec1c5d80-77fb-11ea-8213-886c32660429.png">
+</details>
+
+Press `CTRL + S` to save your changes (or click on `File` -> `Save`).
+
+Now upload you changes and create a [pull request](https://github.com/andi34/photobooth/pulls).
 
 ### How to ajust the ```php.ini``` file?
 Open [http://localhost/phpinfo.php](http://localhost/phpinfo.php) in your browser.
