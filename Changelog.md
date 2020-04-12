@@ -1,5 +1,9 @@
 ### Changelog
 
+#### 2.3.1
+**Bugfixes**
+- Fix loading language files if Photobooth is installed in a subfolder
+
 #### 2.3.0
 **General changes**
 - Switch to blue-gray color theme by default
