@@ -4,6 +4,10 @@
 **Bugfixes**
 - Fix loading language files if Photobooth is installed in a subfolder
 
+**General changes**
+- add license files for node modules on packed builds
+- Installer: Allow using latest prebuild package again
+
 #### 2.3.0
 **General changes**
 - Switch to blue-gray color theme by default
