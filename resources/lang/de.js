@@ -1,6 +1,6 @@
 /* exported L10N */
 const L10N = {
-    'general_ipCamPreviewRotation': 'Vorschau von URL drehen (z.B. 0deg, 90deg, 180deg, -90deg)',
+    'general_ipCamPreviewRotation': 'Vorschau von URL drehen',
     'milliseconds': 'Millisekunden',
     'seconds': 'Sekunde(n)',
     'degrees': '°',
