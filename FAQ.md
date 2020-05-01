@@ -38,22 +38,22 @@ Remove the file and try again!
 
 
 ### How do I change the configuration?
-Only add options which you like to change to `config/my.config.inc.php` to prevent sharing personal data on Github by accident and to make the update easier.
-You can also open `http://localhost/admin` and change your configuration there.
+Open `http://localhost/admin` in your Webbrowser and change the configuration for your personal needs.
+Changed options are stored inside `config/my.config.inc.php` to prevent sharing personal data on Github by accident and to make an update of Photobooth easier.
 
 
 ### How to change the language?
-You can change the language inside ```config/my.config.inc.php``` or via Admin Page.
+Open `http://localhost/admin` in your Webbrowser and change the configuration for your personal needs.
 
 
 ### How to keep pictures on my Camera using gphoto2?
-Add `--keep` (or `--keep-raw` to keep only the raw version on camera) option for gphoto2 in `config/my.config.inc.php`:
+Add `--keep` (or `--keep-raw` to keep only the raw version on camera) option for gphoto2 via admin panel:
 ```
-	$config['take_picture']['cmd'] = 'gphoto2 --capture-image-and-download --keep --filename=%s';
+gphoto2 --capture-image-and-download --keep --filename=%s
 ```
-On some cameras you also need to define the capturetarget because Internal RAM is used to store captured picture. To do this use ```--set-config capturetarget=X``` option for gphoto2 in ```config/my.config.inc.php``` (replace "X" with the target of your choice):
+On some cameras you also need to define the capturetarget because Internal RAM is used to store captured picture. To do this use ```--set-config capturetarget=X``` option for gphoto2 (replace "X" with the target of your choice):
 ```
-	$config['take_picture']['cmd'] = 'gphoto2 --set-config capturetarget=1 --capture-image-and-download --keep --filename=%s';
+gphoto2 --set-config capturetarget=1 --capture-image-and-download --keep --filename=%s
 ```
 To know which capturetarget needs to be defined you need to run:
 ```
@@ -78,7 +78,7 @@ Follow the steps mentioned here: [How to Fix NGINX 413 Request Entity Too Large 
 
 
 ### Can I use Hardware Button to take a Picture on my Raspberry Pi?
-You can use a hardware button connected on GPIO24 to trigger a photo. Set `$config['photo_key']` to e.g. `13` (enter key) or use the Admin panel to specify the key. Next you have to install some dependencies:
+You can use a hardware button connected on GPIO24 to trigger a photo. Set the Take Pictures key to e.g. `13` (enter key) via Admin panel to specify the key. Next you have to install some dependencies:
 
 ```
 sudo apt install libudev-dev
