@@ -9,8 +9,9 @@
 
 **General changes**
 - Bump jquery from 3.4.1 to 3.5.0 (fixes a security vulnerability)
-- config folder: ignore everything but not "config.inc.php"
-- ignore the whole css folder instead defining every .css seperately
+- .gitignore changes:
+  - config folder: ignore everything but not "config.inc.php"
+  - ignore the whole css folder instead defining every .css seperately
 - Down-sized QR code
 - adjust countdown and cheese colors for default blue-gray theme
 
