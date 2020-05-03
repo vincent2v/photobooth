@@ -1,5 +1,19 @@
 ### Changelog
 
+#### 2.3.2
+**Bugfixes**
+- chromakeying: add favicon, add apple meta tags
+
+**New options**
+- Allow to rotate preview from URL
+
+**General changes**
+- Bump jquery from 3.4.1 to 3.5.0 (fixes a security vulnerability)
+- config folder: ignore everything but not "config.inc.php"
+- ignore the whole css folder instead defining every .css seperately
+- Down-sized QR code
+- adjust countdown and cheese colors for default blue-gray theme
+
 #### 2.3.1
 **Bugfixes**
 - Fix loading language files if Photobooth is installed in a subfolder
