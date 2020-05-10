@@ -55,10 +55,6 @@ require_once('../lib/configsetup.inc.php');
 		<p><a href="../login/logout.php" class="btn btn--tiny btn--flex fa fa-sign-out"><span data-l10n="logout"></span></a></p>
 		<?php endif; ?>
 
-		<div id="checkVersion">
-			<p><a href="#" class="btn btn--tiny btn--flex"><span data-l10n="check_version"></span></a></p>
-		</div>
-
 		<div class="accordion">
 			<form>
 				<?php
