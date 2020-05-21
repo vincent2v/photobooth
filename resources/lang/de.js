@@ -188,5 +188,6 @@ const L10N = {
     'slideshow_pictureTime': 'Millisekunden die ein Bild angezeigt wird',
     'randomPicture': 'Zufällige Bilder anzeigen',
     'use_thumbs': 'Thumbnails für die Diashow verwenden',
-    'preserve_exif_data': 'Exif-Daten erhalten'
+    'preserve_exif_data': 'Exif-Daten erhalten',
+    'previewCamBackground': 'Stream der Gerätekamera als Hintergrund nutzen'
 }

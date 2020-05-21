@@ -257,6 +257,7 @@ const L10N = {
     'manual_newest_first': 'If enabled, latest images will be shown first inside the gallery.',
     'manual_polaroid_effect': 'If enabled, a polaroid effect is applied to your picture after it was taken.',
     'manual_preserve_exif_data': 'If enabled, EXIF data is preserved while taking pictures. Please setup the "EXIFtool command" inside the "Commands" tab.',
+    'manual_previewCamBackground': 'If enabled, device cam is used as background on start screen.',
     'manual_previewCamFlipHorizontal': 'If enabled, preview by device cam is flipped horizontal.',
     'manual_previewCamTakesPic': 'If enabled, a picture is taken from device cam instead executing the "Take picture command". Please note that the resolution depends on the given hight and width because it acts like taking a screenshot.',
     'manual_previewFromCam': 'If enabled, a preview by your device cam is used at countdown. Preview by "device cam" will always use the camera of the device where Photobooth get opened in a Browser (e.g. on a tablet it will always show the tablet camera while on a smartphone it will always show the smartphone camera instead)! A secure origin or exception is required! You can find out how to set an exception <a href="https://medium.com/@Carmichaelize/enabling-the-microphone-camera-in-chrome-for-local-unsecure-origins-9c90c3149339"  target="_blank">here</a>.',
@@ -303,5 +304,6 @@ const L10N = {
     'manual_user_interface_background_chroma': 'CSS Style for background on chromakeying page. For example you can define a "url" or a color.',
     'manual_user_interface_background_image': 'CSS Style for background on start-, login- and slideshow pages. For example you can define a "url" or a color.',
     'manual_user_interface_font_size': 'Enter the default fontsize used for the Photobooth interface.',
-    'show_wiki': 'Open Wiki (internet connection required)'
+    'show_wiki': 'Open Wiki (internet connection required)',
+    'previewCamBackground': 'Use stream from device cam as background'
 }
