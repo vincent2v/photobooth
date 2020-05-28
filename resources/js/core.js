@@ -533,6 +533,7 @@ const photoBooth = (function () {
         e.preventDefault();
 
         public.thrill('photo');
+        $('.newpic').blur();
     });
 
     // Take Collage Button
@@ -540,6 +541,7 @@ const photoBooth = (function () {
         e.preventDefault();
 
         public.thrill('collage');
+        $('.newcollage').blur();
     });
 
     $('#mySidenav .closebtn').on('click', function (e) {
