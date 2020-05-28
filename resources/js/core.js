@@ -345,7 +345,7 @@ const photoBooth = (function () {
             e.stopPropagation();
 
             public.printImage(filename, function() {
-                public.reloadPage();
+                $('.printbtn').blur();
             });
         });
 
