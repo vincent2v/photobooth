@@ -1,4 +1,4 @@
-## Installation on Raspbian:
+## Installation on Raspberry Pi OS (previously called Raspbian):
 To make the installation as simple as possible, we have created an installation script for you. It will setup your Raspberry Pi (using Apache Webserver) as a full blown Photobooth. This means, Photobooth is started in fullscreen on startup and the automatic camera mount is disabled. If you encounter any issues or want more freedom to configure your Pi, we recommend you look at the detailed installation instruction below.
 
 ```
@@ -11,7 +11,7 @@ To use Lighttpd as Webserver run `sudo bash install-raspbian.sh lighttpd`.
 
 
 ## Installation on Debian / Debian based distributions:
-The steps below were tested on "Raspbian Buster with desktop", but should work for all Debian and Debian based distributions. Photobooth can also be used on any other PC/Laptop running a supported OS.
+The steps below were tested on "Raspberry Pi OS (previously called Raspbian) with desktop" based on Debian Buster, but should work for all Debian and Debian based distributions. Photobooth can also be used on any other PC/Laptop running a supported OS.
 
 ### Update your system
 ```
