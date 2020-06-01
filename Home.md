@@ -6,7 +6,7 @@ A Photobooth webinterface for Raspberry Pi and Windows.
 
 ## Installation
 
-* [Installation on Raspbian](Installation-on-Debian)
+* [Installation on Raspberry Pi OS (previously called Raspbian)](Installation-on-Debian)
 * [Installation on Debian / Debian based distributions](Installation-on-Debian#installation-on-debian--debian-based-distributions)
 * [Installation on Windows](Installation-on-Windows)
 
