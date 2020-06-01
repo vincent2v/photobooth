@@ -29,12 +29,6 @@ OLDFILES=(
     'logout.php'
     'admin/config.json'
     'resources/fonts/style.css'
-    'resources/js/l10n.js'
-    'resources/lang/de.js'
-    'resources/lang/en.js'
-    'resources/lang/es.js'
-    'resources/lang/fr.js'
-    'resources/lang/gr.js'
 )
 
 if [[ ! -d "${booth_source}" ]]; then
