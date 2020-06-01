@@ -195,7 +195,7 @@ https://github.com/andreknieriem/photobooth/pull/20
 If connection fails some help can be found [here](https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting), especially gmail needs some special config.
 - Should be obvious but the photobooth must be connected to WIFI/internet to send photos live.
 
-Otherwise, tell them to check the box to send them the photo later and it will add everyone's email to a list for you.
+  Otherwise, tell them to check the box to send them the photo later and it will add everyone's email to a list for you.
 
 - For gmail you need to generate an app password if you have 2-factor authentication on.
 
