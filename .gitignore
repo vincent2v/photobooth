@@ -13,3 +13,4 @@ trash
 /.htaccess
 .htpasswd
 *.patch
+vendor/simple-translator
