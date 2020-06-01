@@ -1,5 +1,15 @@
 ### Changelog
 
+#### 2.3.3
+**Bugfixes**
+- qr code: no need to define width for the text
+
+**General changes**
+- index: remove unused "blurred" class
+- Remove focus on "New Picture" and "New Collage" buttons
+- update-booth.sh: delete old files if exist
+- result screen: don't reload page after print
+
 #### 2.3.2
 **Bugfixes**
 - chromakeying: add favicon, add apple meta tags
