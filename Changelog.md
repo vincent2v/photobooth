@@ -1,5 +1,14 @@
 ### Changelog
 
+#### Upcoming v2.4.0
+
+**New Options**
+- offline manual with settings explained under [localhost/manual](http://localhost/manual)
+- define collage frame seperately (https://github.com/andi34/photobooth/pull/63)
+- event specific database: You can now rename the picture and email database via Adminpanel. Only pictures inside the defined database are visible via gallery.
+- Preview/Stream by device cam as background on start page
+
+
 #### 2.3.3
 **Bugfixes**
 - qr code: no need to define width for the text
