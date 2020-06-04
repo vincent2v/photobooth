@@ -130,6 +130,8 @@ const L10N = {
     'use_collage': 'Αφήστε το κολάζ φωτογραφιών',
     'take_frame': 'Βγάλτε φωτογραφία με το πλαίσιο',
     'general_take_frame_path': 'Frame',
+    'take_collage_frame': 'Take collage with frame',
+    'general_take_collage_frame_path': 'Frame',
     'print_frame': 'Εκτύπωση πλαισίου στην εικόνα',
     'print_frame_path': 'Frame',
     'is_textonprint': 'Εκτυπώστε κείμενο στην εικόνα',

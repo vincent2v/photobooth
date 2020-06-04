@@ -131,6 +131,8 @@ const L10N = {
     'use_collage': 'Autorice la función collage',
     'take_frame': 'Tomar foto con marco',
     'general_take_frame_path': 'Frame',
+    'take_collage_frame': 'Take collage with frame',
+    'general_take_collage_frame_path': 'Frame',
     'print_frame': 'Imprimir el borde en la foto',
     'print_frame_path': 'Frame',
     'is_textonprint': 'Imprimir un texto en una foto',

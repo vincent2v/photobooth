@@ -131,6 +131,8 @@ const L10N = {
     'use_collage': 'Autorisez la fonction du montage photo',
     'take_frame': 'Prendre une photo avec cadre',
     'general_take_frame_path': 'Frame',
+    'take_collage_frame': 'Take collage with frame',
+    'general_take_collage_frame_path': 'Frame',
     'print_frame': 'Imprimez le contour sur la photo',
     'print_frame_path': 'Frame',
     'is_textonprint': 'Imprimez un texte sur la photo',
