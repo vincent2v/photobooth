@@ -3,10 +3,10 @@
 #### Upcoming v2.4.0
 
 **New Options**
-- offline manual with settings explained under [localhost/manual](http://localhost/manual)
+- offline manual with settings explained under [localhost/manual](http://localhost/manual) (https://github.com/andi34/photobooth/pull/59)
 - define collage frame seperately (https://github.com/andi34/photobooth/pull/63)
-- event specific database: You can now rename the picture and email database via Adminpanel. Only pictures inside the defined database are visible via gallery.
-- Preview/Stream by device cam as background on start page
+- event specific database: You can now rename the picture and email database via Adminpanel. Only pictures inside the defined database are visible via gallery. (https://github.com/andi34/photobooth/pull/61)
+- Preview/Stream from device cam as background on start page (https://github.com/andi34/photobooth/pull/58)
 
 
 #### 2.3.3
