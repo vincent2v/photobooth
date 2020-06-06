@@ -271,6 +271,7 @@ const L10N = {
     'show_error_messages': 'Fehlermeldungen anzeigen',
     'show_fork': 'Fork Logo anzeigen',
     'show_gallery': 'Galerie aktivieren',
+    'show_wiki': 'Wiki öffnen (Internetverbindung erforderlich)',
     'slideshow': 'Diashow',
     'slideshow_pictureTime': 'Millisekunden die ein Bild angezeigt wird',
     'slideshow_refreshTime': 'Seite neuladen nach X Sekunden',

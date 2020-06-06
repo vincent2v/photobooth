@@ -44,7 +44,6 @@ const L10N = {
     'gallery': 'Gallery',
     'gallery_date_format': 'Date style',
     'gallery_no_image': 'The gallery is still empty. Take some pictures!',
-    'gallery_pictureTime': 'Milliseconds an image is displayed at slideshow',
     'general': 'General',
     'general_camera_mode': 'Camera facing mode',
     'general_cheese_time': 'Cheeeeeeeese!-Timer:',
