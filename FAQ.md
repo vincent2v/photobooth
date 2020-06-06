@@ -229,6 +229,11 @@ Look for *"Accelerated 2D canvas"* and change it to `"disabled"`.
 Now restart your Chromium browser.
 
 ### How to update or add translations?
+On v2.2.0 and older:
+Edit the language file inside `resources/lang/` with your favorite text editor.
+Once you're done upload your changes and create a [pull request](https://github.com/andi34/photobooth/pulls).
+
+On v2.3.0 and newer:
 Get i18n-editor v2.0.0-beta.1 [from here](https://github.com/jcbvm/i18n-editor/releases/tag/2.0.0-beta.1). The application requires java 8 to be installed on your system. You can get java 8 from [https://www.oracle.com](https://www.oracle.com/java/technologies/javase-jre8-downloads.html).
 
 - If you're on Windows you can install the application by running the `.exe` file. If you're on Mac you can use the application by running the `.app` file. If you're on Linux you can use the application by running the `.jar` file.
