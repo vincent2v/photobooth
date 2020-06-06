@@ -1,6 +1,6 @@
 ### Changelog
 
-#### v2.4.0
+#### 2.4.0
 
 **New Options**
 - offline manual with settings explained under [localhost/manual](http://localhost/manual) (https://github.com/andi34/photobooth/pull/59)
