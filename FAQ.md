@@ -177,6 +177,7 @@ Yes you can. There's different ways depending on your needs and personal setup:
     - If enabled, a stream from your device cam is used as background on start screen. It's still possible to use preview from your device cam as background on countdown and also still possible to take pictures via device cam or using `raspistill` for Pi Camera.
 
 2.On Photobooth v2.3.0 and newer you can use the option "Preview from URL" and define the "Preview-URL" via admin panel.
+
     - If enabled, a preview by defined url will be visible at countdown. Make sure to have a stream available you can use (e.g. from your Webcam, Smartphone Camera or Raspberry Pi Camera).
 
 3. You need to change the background URL path via config or admin panel. Replace `url(../img/bg.jpg)` with your IP-Adress and port (if needed) as URL.
