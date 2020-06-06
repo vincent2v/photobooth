@@ -1,4 +1,4 @@
-export default {
+const L10N = {
   'abort': 'Abbrechen',
   'admin_panel': 'Admin Panel',
   'allow_delete': 'Löschen des Bildes erlauben',
