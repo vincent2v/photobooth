@@ -171,24 +171,33 @@ There's different ways depending on your needs and personal setup:
 
 
 ### Can I use a live stream as background?
-Yes you can.
+Yes you can. There's different ways depending on your needs and personal setup:
 
-You need to change the background URL path via config or admin panel. Replace `url(../img/bg.jpg)` with your IP-Adress and port (if needed) as URL.
-Example:
-```
--   url(../img/bg.jpg)
-+   url(http://127.0.0.1:8081)
-```
+1. On Photobooth v2.4.0 and newer you can use the option "Use stream from device cam as background" inside admin panel.
+    - If enabled, a stream from your device cam is used as background on start screen. It's still possible to use preview from your device cam as background on countdown and also still possible to take pictures via device cam or using `raspistill` for Pi Camera.
 
-To use a Raspberry Pi Camera module Motion is required, but you won't be able to use the Raspberry Pi Camera for preview at countdown!
-```
-sudo apt-get install -y motion
-```
-/etc/motion/motion.conf needs to be changed to your needs (e.g. starting on boot, using videoX, resolution etc.).
-If you're accessing Photobooth from an external device (e.g. Tablet or Mobile Phone) replace `127.0.0.1` with your IP-Adress.
+2.On Photobooth v2.3.0 and newer you can use the option "Preview from URL" and define the "Preview-URL" via admin panel.
+    - If enabled, a preview by defined url will be visible at countdown. Make sure to have a stream available you can use (e.g. from your Webcam, Smartphone Camera or Raspberry Pi Camera).
 
-For reference:
-https://github.com/andreknieriem/photobooth/pull/20
+3. You need to change the background URL path via config or admin panel. Replace `url(../img/bg.jpg)` with your IP-Adress and port (if needed) as URL.
+    Example:
+    ```
+    -   url(../img/bg.jpg)
+    +   url(http://127.0.0.1:8081)
+    ```
+
+    To use a Raspberry Pi Camera module Motion is required, but you won't be able to use the Raspberry Pi Camera 
+    for preview at countdown!
+    ```
+    sudo apt-get install -y motion
+    ```
+    /etc/motion/motion.conf needs to be changed to your needs (e.g. starting on boot, using videoX, resolution 
+    etc.).
+    If you're accessing Photobooth from an external device (e.g. Tablet or Mobile Phone) replace `127.0.0.1` 
+    with your IP-Adress.
+
+    For reference:
+    https://github.com/andreknieriem/photobooth/pull/20
 
 
 ### I've trouble setting up E-Mail config. How do I solve my problem?
