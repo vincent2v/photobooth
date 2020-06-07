@@ -41,7 +41,7 @@ A Photobooth webinterface for Raspberry Pi and Windows.
 * **Q:** [I've trouble setting up E-Mail config. How do I solve my problem?](FAQ#ive-trouble-setting-up-e-mail-config-how-do-i-solve-my-problem)
 * **Q:** [How to only open the gallery to avoid people taking pictures](FAQ#how-to-only-open-the-gallery-to-avoid-people-taking-pictures)
 * **Q:** [Chromakeying isn't working if I access the Photobooth page on my Raspberry Pi, but it works if I access Photobooth from an external device (e.g. mobile phone or tablet). How can I solve the problem?](FAQ#chromakeying-isnt-working-if-i-access-the-photobooth-page-on-my-raspberry-pi-but-it-works-if-i-access-photobooth-from-an-external-device-eg-mobile-phone-or-tablet-how-can-i-solve-the-problem)
-* **Q:** [How to update or add translations?](https://github.com/andi34/photobooth/wiki/FAQ#how-to-update-or-add-translations)
+* **Q:** [How to update or add translations?](FAQ#how-to-update-or-add-translations)
 * **Q:** [How to ajust the php.ini file?](FAQ#how-to-ajust-the-phpini-file)
 
 ## Changelog
