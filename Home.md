@@ -58,5 +58,18 @@ Get a copy of this Wiki to always have the FAQ, Changelog etc. with you. Run the
 
 To update your local Wiki copy with latest changes you only need to run `git pull` from Terminal.
 
+## Contribute to this Wiki
+Clone the Photobooth project from github and make changes to the `wiki` branch. Run the following command from your Terminal:
+
+```
+git clone https://github.com/andi34/photobooth.git
+cd photobooth
+git fetch origin
+git checkout origin/wiki
+```
+
+Make your changes, upload them to your fork and create a [pull request](https://github.com/andi34/photobooth/pulls).
+
+
 #### Wiki History
 View all changes made in this Wiki [here](_history).
