@@ -8,17 +8,25 @@ Some DSLR and Compact Cameras are not supported by this project. Please check fo
 ### Is Pi Camera supported?
 Yes it is.
 
-First we need to allow our webserver to use `raspistill`. We need add our webserver user to `video` group and reboot once:
+Enable camera support using the `raspi-config` program you will have used when you first set up your Raspberry Pi.
+
+`sudo raspi-config`
+
+Use the cursor keys to select and open Interfacing Options, and then select Camera and follow the prompt to enable the camera.
+
+Now you need to allow the webserver to use `raspistill`. You need add the webserver user to video group and reboot once:  
 ```
 sudo gpasswd -a www-data video
 reboot
 ```
+Once done you need to adjust the configuration. Open the admin panel in your browser [localhost/admin](http://localhost/admin) and make the following changes:
 
-Next you need to adjust the config:
-```
-$config['take_picture']['cmd'] = 'raspistill -n -o %s -q 100 -t 1 | echo Done';
-$config['take_picture']['msg'] = 'Done';
-```
+**"Take picture command":**   
+`raspistill -n -o %s -q 100 -t 1 | echo Done`
+
+**"Success message for take picture":**  
+`Done`
+
 Pi Camera works with these config changes (also works together with preview at countdown if enabled).
 Raspistill does not give any feedback after the picture was taken, workaround for that with "echo".
 (Thanks to Andreas Maier for that information)
