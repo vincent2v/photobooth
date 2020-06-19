@@ -34,7 +34,7 @@ cd /var/www/html
 
 Next you need to add my repo as remote:
 ```
-git remote add andi34 https://github.com/andi34/photobooth/tree/wiki/
+git remote add andi34 https://github.com/andi34/photobooth
 ```
 
 Now fetch the sources, checkout the right branch, install dependencies and build needed files:
