@@ -12,7 +12,6 @@ Make sure you have no local changes, else make sure to commit them (`git add --a
 
 Run below commands in your terminal:
 ```
-cd /var/www/
 sudo -u www-data -s
 cd /var/www/html
 git fetch origin
@@ -29,7 +28,6 @@ Make sure you have no local changes, else make sure to commit them (`git add --a
 
 Run below commands in your terminal:
 ```
-cd /var/www/
 sudo -u www-data -s
 cd /var/www/html
 ```
