@@ -369,7 +369,7 @@ const photoBooth = (function () {
             const body = qrCodeModal.find('.modal__body');
 
             $(this).appendTo(body);
-            $('<p>').css('max-width', this.width + 'px').html(L10N.qrHelp).appendTo(body);
+            $('<p>').css('max-width', this.width + 'px').html(L10N.qrHelp + '</br><b>' + config.wifi_ssid + '</b>').appendTo(body);
         });
 
         // Add Print Link
