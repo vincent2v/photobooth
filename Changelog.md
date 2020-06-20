@@ -1,5 +1,16 @@
 ### Changelog
 
+#### Upcoming release
+
+**New options**
+- buttons inside gallery on bottom (can be put back on top via admin panel) [#66](https://github.com/andi34/photobooth/pull/66)
+- define SSID used for QR on result page via admin panel [#70](https://github.com/andi34/photobooth/pull/70)
+
+**General**
+- Fix Start Screen on devices with max-width @ 1024px[#68](https://github.com/andi34/photobooth/pull/68)
+- install-raspbian: install recommended via git (easier update of Photobooth)
+- mention personal fork additions inside README
+
 #### 2.4.0
 
 **New Options**
