@@ -1,6 +1,10 @@
 ### Changelog
 
 #### Upcoming release
+
+*Nothing for now*
+
+#### 2.5.0
 **New options**
 - buttons inside gallery on bottom (can be put back on top via admin panel) [#66](https://github.com/andi34/photobooth/pull/66)
 - define SSID used for QR on result page via admin panel [#70](https://github.com/andi34/photobooth/pull/70)
