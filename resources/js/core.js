@@ -314,7 +314,14 @@ const photoBooth = (function () {
             if (config.show_error_messages || config.dev) {
                 $('.loading').append($('<p class="text-muted">').text(data.error));
             }
-            $('.loading').append($('<a class="btn" href="./">').text(L10N.reload));
+            if (config.auto_reload_on_error) {
+                $('.loading').append($('<p>').text(L10N.auto_reload));
+                setTimeout(function () {
+                    public.reloadPage();
+                }, 5000);
+            } else {
+                $('.loading').append($('<a class="btn" href="./">').text(L10N.reload));
+            }
         }, 500);
     }
 
