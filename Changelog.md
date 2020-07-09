@@ -4,6 +4,18 @@
 
 *Nothing for now*
 
+
+#### 2.6.0
+**New options**
+- Automatically reload Photobooth if an error occurs while taking a photo/collage (enabled by default)
+
+**Bugfixes**
+- Fix FC on Standalone Gallery if a keycode is defined to take a photo/collage
+- Close gallery if a keycode is defined to take a photo/collage
+
+**General changes**
+- update PHPMailer to latest version
+
 #### 2.5.0
 **New options**
 - buttons inside gallery on bottom (can be put back on top via admin panel) [#66](https://github.com/andi34/photobooth/pull/66)
