@@ -2,12 +2,14 @@
 - eslint is satisfied (`yarn eslint`)
 - there are no orphaned files, the repository is clean
 - checkout the related stable branch (e.g. `stable2`)
-- merge master branch (`git merge master`)
+- merge dev branch (`git merge dev`)
 - bump version in `package.json` according to [semantic versioning](https://semver.org)
 - create commit (`git commit -am "bump version to vX.X.X"`)
-- create (signed) tag (`git tag -s -a vX.X.X -m "tag vX.X.X"`)
+- create tag (`git tag -a vX.X.X -m "tag vX.X.X"`)
+- build css files by calling `gulp sass`
+- make sure submodules are up to date (`git submodule update --init`) 
 - pack build by calling `node scripts/pack-build.js`
 - push commit and tag (`git push origin && git push origin --tags`)
 - update changelog in [wiki](https://github.com/andi34/photobooth/wiki/Changelog)
-- create release from tag on Github and attach archives (zip and tar: `yarn pack:build`)
-- party :tada: 
+- create release from tag on Github and attach archives (zip and tar)
+- party :tada:
