@@ -276,6 +276,7 @@ const L10N = {
     'send_all_later': 'Active la casilla de verificación para añadir el correo electrónico ingresado a un fichero (por ejemplo, para enviar todas las fotos más tarde)',
     'show_date': 'Muestre la fecha debajo de las imágenes (sólo funciona con imágenes al formato fecha)',
     'show_error_messages': 'Mostrar mensajes de error',
+    'show_faq': 'Open FAQ',
     'show_fork': 'Muestre el banner de la página',
     'show_gallery': 'Muestre la galería',
     'show_wiki': 'Abierto wiki (conexión a Internet requerida)',

@@ -276,6 +276,7 @@ const L10N = {
     'send_all_later': 'Activez la case à cocher pour ajouter l’adresse saisie à un fichier (par exemple, pour envoyer un courrier avec toutes les images ultérieurement)',
     'show_date': 'Montrez la date sous les images (fonctionne uniquement avec images au format de date)',
     'show_error_messages': 'Afficher les messages d’erreur',
+    'show_faq': 'Open FAQ',
     'show_fork': 'Affichez le badge de la page Github',
     'show_gallery': 'Montrez la galerie',
     'show_wiki': 'Open Wiki (internet connection required)',
