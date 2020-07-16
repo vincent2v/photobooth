@@ -2,7 +2,7 @@
 
 A Photobooth webinterface for Raspberry Pi and Windows.
 
-![](images/start.png)
+![](resources/img/start.png)
 
 ## Installation
 
