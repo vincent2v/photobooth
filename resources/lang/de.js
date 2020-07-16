@@ -279,6 +279,7 @@ const L10N = {
     'show_faq': 'FAQ öffnen',
     'show_fork': 'Fork Logo anzeigen',
     'show_gallery': 'Galerie aktivieren',
+    'show_manual': 'Handbuch öffnen',
     'show_wiki': 'Wiki öffnen (Internetverbindung erforderlich)',
     'slideshow': 'Diashow',
     'slideshow_pictureTime': 'Millisekunden die ein Bild angezeigt wird',

@@ -279,6 +279,7 @@ const L10N = {
     'show_faq': 'Open FAQ',
     'show_fork': 'Show Fork Badge',
     'show_gallery': 'Show Gallery',
+    'show_manual': 'Open Manual',
     'show_wiki': 'Open Wiki (internet connection required)',
     'slideshow': 'Slideshow',
     'slideshow_pictureTime': 'Milliseconds an image is displayed',

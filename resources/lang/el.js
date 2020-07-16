@@ -278,6 +278,7 @@ const L10N = {
     'show_error_messages': 'Εμφάνιση μηνυμάτων σφάλματος',
     'show_fork': 'Εμφανίστε το λογότυπο Fork',
     'show_gallery': 'Ενεργοποιήστε τη συλλογή',
+    'show_manual': 'Open Manual',
     'show_wiki': 'Open Wiki (internet connection required)',
     'slideshow': 'Slideshow',
     'slideshow_pictureTime': 'Σε χιλιοστά του δευτερολέπτου εμφανίζεται μια εικόνα',
