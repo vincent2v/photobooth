@@ -40,9 +40,9 @@ Please take a look at the issue page [here](https://github.com/andi34/photobooth
 
 ### I've a white page after updating to latest Source, how can I solve this?
 On v1.9.0 and older:
-It could be your local ```config.json``` file doesn't match latest source. This file is generated if you've used the admin panel to change your config.
+It could be your local `config.json` file doesn't match latest source. This file is generated if you've used the admin panel to change your config.
 Remove the file and try again!
-``` sudo rm /var/www/html/admin/config.json```
+`sudo rm /var/www/html/admin/config.json`
 
 
 ### How do I change the configuration?
@@ -59,7 +59,7 @@ Add `--keep` (or `--keep-raw` to keep only the raw version on camera) option for
 ```
 gphoto2 --capture-image-and-download --keep --filename=%s
 ```
-On some cameras you also need to define the capturetarget because Internal RAM is used to store captured picture. To do this use ```--set-config capturetarget=X``` option for gphoto2 (replace "X" with the target of your choice):
+On some cameras you also need to define the capturetarget because Internal RAM is used to store captured picture. To do this use `--set-config capturetarget=X` option for gphoto2 (replace "X" with the target of your choice):
 ```
 gphoto2 --set-config capturetarget=1 --capture-image-and-download --keep --filename=%s
 ```
@@ -115,7 +115,7 @@ and add the following lines:
 @xset s noblank
 @chromium-browser --incognito --kiosk http://localhost/
 ```
-**NOTE:** If you're using QR-Code replace ```http://localhost/``` with your local IP-Adress (e.g. ```http://192.168.4.1```), else QR-Code does not work.
+**NOTE:** If you're using QR-Code replace `http://localhost/` with your local IP-Adress (e.g. `http://192.168.4.1`), else QR-Code does not work.
 
 
 #### Enable touch events
@@ -123,7 +123,7 @@ If touch is not working on your Raspberry Pi edit the LXDE Autostart Script agai
 ```
 sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
 ```
-and add ```--touch-events=enabled``` for Chromium:
+and add `--touch-events=enabled` for Chromium:
 ```
 @chromium-browser --incognito --kiosk http://localhost/ --touch-events=enabled
 ```
@@ -254,7 +254,9 @@ Get i18n-editor v2.0.0-beta.1 [from here](https://github.com/jcbvm/i18n-editor/r
 
 If you are running i18n-editor the first time, you simply need to drag-and-drop the `lang` folder (inside your photobooth source inside the `resources` folder) into i18n-editor:
 
-![Screenshot_2020-04-06_11-42-03](https://user-images.githubusercontent.com/6080900/78545204-b24b5700-77fb-11ea-9439-b532e7f1ec4b.png)
+<details><summary>CLICK ME</summary>
+<img src="https://user-images.githubusercontent.com/6080900/78545204-b24b5700-77fb-11ea-9439-b532e7f1ec4b.png">
+</details>
 
 You could also click on `File` -> `New Project` -> `JSON Format ...` -> navigate into the `lang` folder -> click on `open`
 Now you get asked if you like to import found existing translations -> confirm clicking on `yes`:
