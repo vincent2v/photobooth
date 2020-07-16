@@ -1,6 +1,5 @@
 # FAQ - Frequently asked questions
 
-
 ### Is my Camera supported?
 Some DSLR and Compact Cameras are not supported by this project. Please check for your specific model [here](http://gphoto.org/proj/libgphoto2/support.php).
 
@@ -207,6 +206,7 @@ Yes you can. There's different ways depending on your needs and personal setup:
 <hr>
 ### I've trouble setting up E-Mail config. How do I solve my problem?
 If connection fails some help can be found [here](https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting), especially gmail needs some special config.
+
 - Should be obvious but the photobooth must be connected to WIFI/internet to send photos live.
 
   Otherwise, tell them to check the box to send them the photo later and it will add everyone's email to a list for you.
@@ -214,6 +214,7 @@ If connection fails some help can be found [here](https://github.com/PHPMailer/P
 - For gmail you need to generate an app password if you have 2-factor authentication on.
 
 Tested working setup:
+
 - gmail.com
   - Email host adress: `smtp.gmail.com`
   - Username: `*****@gmail.com`
