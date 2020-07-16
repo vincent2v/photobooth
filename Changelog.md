@@ -5,6 +5,16 @@
 *Nothing for now*
 
 
+#### 2.6.1
+**Bugfixes**
+- Fix video--sensor canvas
+- Update Style for 5inch Display (800x480px)
+- Attempt to fix taking Pictures and Collage via defined keys
+
+**General changes**
+- Add offline FAQ, access directly via [http://localhost/manual/faq.html](http://localhost/manual/faq.html)
+- Update jQuery to v3.5.1
+
 #### 2.6.0
 **New options**
 - Automatically reload Photobooth if an error occurs while taking a photo/collage (enabled by default)
