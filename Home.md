@@ -43,6 +43,7 @@ A Photobooth webinterface for Raspberry Pi and Windows.
 * **Q:** [Chromakeying isn't working if I access the Photobooth page on my Raspberry Pi, but it works if I access Photobooth from an external device (e.g. mobile phone or tablet). How can I solve the problem?](FAQ#chromakeying-isnt-working-if-i-access-the-photobooth-page-on-my-raspberry-pi-but-it-works-if-i-access-photobooth-from-an-external-device-eg-mobile-phone-or-tablet-how-can-i-solve-the-problem)
 * **Q:** [How to update or add translations?](FAQ#how-to-update-or-add-translations)
 * **Q:** [How to ajust the php.ini file?](FAQ#how-to-ajust-the-phpini-file)
+* **Q:** [How to turn Photobooth into a WIFI hotspot?](FAQ#turn-photobooth-into-a-wifi-hotspot)
 
 ## Changelog
 View all version changes [here](changelog).
