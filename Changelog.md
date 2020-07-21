@@ -1,9 +1,20 @@
 ### Changelog
 
 #### Upcoming release
+**New options**
+- Add option to use numbered image names
+- Allow to change picture permissons while taking a photo
+  - usefully if you e.g. like to delete pictures as different user
 
-*Nothing for now*
+**General changes**
+- Add database name to picture name if database changed from default name
+- Show "Photobooth Gallery" if using date formatted images but no date available
+- Add rpihotspot repo as submodule:
+  - FAQ contains instructions to turn Photobooth into a WIFI Hotspot
 
+**Bugfixes**
+- Fix loading language resources
+- Only take Photos if we aren't already
 
 #### 2.6.1
 **Bugfixes**
