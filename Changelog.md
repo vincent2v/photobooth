@@ -13,6 +13,7 @@
   - FAQ contains instructions to turn Photobooth into a WIFI Hotspot
 
 **Bugfixes**
+- Fix "Cheeeeese" on Apple devices
 - Fix loading language resources
 - Only take Photos if we aren't already
 
