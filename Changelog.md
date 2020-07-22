@@ -1,6 +1,9 @@
 ### Changelog
 
 #### Upcoming release
+- *nothing right now*
+
+#### 2.7.0
 **New options**
 - Add option to use numbered image names
 - Allow to change picture permissons while taking a photo
