@@ -4,6 +4,7 @@
 Some DSLR and Compact Cameras are not supported by this project. Please check for your specific model [here](http://gphoto.org/proj/libgphoto2/support.php).
 
 <hr>
+
 ### Is Pi Camera supported?
 Yes it is.
 
@@ -33,27 +34,32 @@ Raspistill does not give any feedback after the picture was taken, workaround fo
 You've the possibility to add more parameters if needed (define ISO, exposure, white balance etc.). Type `raspistill -?` in your terminal to get information about possible parameters / settings.
 
 <hr>
+
 ### I've found a bug, how can I report?
 Please take a look at the issue page [here](https://github.com/andi34/photobooth/issues) , if your bug isn't mentioned already you can create a new issue. Please give informations detailed as possible to reproduce and analyse the problem.
 
 <hr>
-### I've a white page after updating to latest Source, how can I solve this?
+
+###  I've a white page after updating to latest Source, how can I solve this?
 On v1.9.0 and older:
 It could be your local `config.json` file doesn't match latest source. This file is generated if you've used the admin panel to change your config.
 Remove the file and try again!
 `sudo rm /var/www/html/admin/config.json`
 
 <hr>
-### How do I change the configuration?
+
+###  How do I change the configuration?
 Open `http://localhost/admin` in your Webbrowser and change the configuration for your personal needs.
 Changed options are stored inside `config/my.config.inc.php` to prevent sharing personal data on Github by accident and to make an update of Photobooth easier.
 
 <hr>
-### How to change the language?
+
+###  How to change the language?
 Open `http://localhost/admin` in your Webbrowser and change the configuration for your personal needs.
 
 <hr>
-### How to keep pictures on my Camera using gphoto2?
+
+###  How to keep pictures on my Camera using gphoto2?
 Add `--keep` (or `--keep-raw` to keep only the raw version on camera) option for gphoto2 via admin panel:
 ```
 gphoto2 --capture-image-and-download --keep --filename=%s
@@ -78,13 +84,15 @@ Choice: 1 Memory card
 ```
 
 <hr>
-### Cromakeying is saving without finishing saving
+
+###  Cromakeying is saving without finishing saving
 Checking the browser console you'll see a `413 Request Entity Too Large` error. To fix that you'll have to update your nginx.conf
 
 Follow the steps mentioned here: [How to Fix NGINX 413 Request Entity Too Large Error](https://datanextsolutions.com/blog/how-to-fix-nginx-413-request-entity-too-large-error/)
 
 <hr>
-### Can I use Hardware Button to take a Picture on my Raspberry Pi?
+
+###  Can I use Hardware Button to take a Picture on my Raspberry Pi?
 You can use a hardware button connected on GPIO24 to trigger a photo. Set the Take Pictures key to e.g. `13` (enter key) via Admin panel to specify the key. Next you have to install some dependencies:
 
 ```
@@ -102,7 +110,8 @@ sudo crontab -e
 ```
 
 <hr>
-### How do I enable Kiosk Mode to automatically start Photobooth in full screen?
+
+###  How do I enable Kiosk Mode to automatically start Photobooth in full screen?
 Edit the LXDE Autostart Script:
 ```
 sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
@@ -117,7 +126,8 @@ and add the following lines:
 **NOTE:** If you're using QR-Code replace `http://localhost/` with your local IP-Adress (e.g. `http://192.168.4.1`), else QR-Code does not work.
 
 <hr>
-#### Enable touch events
+
+### # Enable touch events
 If touch is not working on your Raspberry Pi edit the LXDE Autostart Script again
 ```
 sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
@@ -128,7 +138,8 @@ and add `--touch-events=enabled` for Chromium:
 ```
 
 <hr>
-#### How to hide the Mouse Cursor?
+
+### # How to hide the Mouse Cursor?
 There are two options to hide the cursor. The first approach allows you to show the cursor for a short period of time (helpful if you use a mouse and just want to hide the cursor of some time of inactivity), or to hide it permanently.
 
 **Solution A**
@@ -149,11 +160,13 @@ and add the following line (0 describes the time after which the cursor should b
 If you are using LightDM as display manager, you can edit `/etc/lightdm/lightdm.conf` to hide the cursor permanently. Just add `xserver-command=X -nocursor` to the end of the file.
 
 <hr>
-### How to disable the blank screen on Raspberry Pi (Raspbian)?
+
+###  How to disable the blank screen on Raspberry Pi (Raspbian)?
 You can follow the instructions [here](https://www.geeks3d.com/hacklab/20160108/how-to-disable-the-blank-screen-on-raspberry-pi-raspbian/) to disable the blank screen.
 
 <hr>
-### How to use a live stream as background at countdown?
+
+###  How to use a live stream as background at countdown?
 There's different ways depending on your needs and personal setup:
 
 1. If you access Photobooth on your Raspberry Pi you could use a Raspberry Pi Camera. Raspberry Pi Camera will be detected as "device cam".
@@ -177,7 +190,8 @@ There's different ways depending on your needs and personal setup:
     - Requires Photobooth v2.2.1 or later!
 
 <hr>
-### Can I use a live stream as background?
+
+###  Can I use a live stream as background?
 Yes you can. There's different ways depending on your needs and personal setup:
 
 1. On Photobooth v2.4.0 and newer you can use the option "Use stream from device cam as background" inside admin panel.
@@ -204,7 +218,8 @@ Yes you can. There's different ways depending on your needs and personal setup:
     https://github.com/andreknieriem/photobooth/pull/20
 
 <hr>
-### I've trouble setting up E-Mail config. How do I solve my problem?
+
+###  I've trouble setting up E-Mail config. How do I solve my problem?
 If connection fails some help can be found [here](https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting), especially gmail needs some special config.
 
 - Should be obvious but the photobooth must be connected to WIFI/internet to send photos live.
@@ -234,17 +249,20 @@ Tested working setup:
   - Security: `TLS`
 
 <hr>
-### How to only open the gallery to avoid people taking pictures?
+
+###  How to only open the gallery to avoid people taking pictures?
 Open [http://localhost/gallery.php](http://localhost/gallery.php) in your browser (you can replace `localhost` with your IP adress).
 
 <hr>
-### Chromakeying isn't working if I access the Photobooth page on my Raspberry Pi, but it works if I access Photobooth from an external device (e.g. mobile phone or tablet). How can I solve the problem?
+
+###  Chromakeying isn't working if I access the Photobooth page on my Raspberry Pi, but it works if I access Photobooth from an external device (e.g. mobile phone or tablet). How can I solve the problem?
 Open `chrome://flags` in your browser.
 Look for *"Accelerated 2D canvas"* and change it to `"disabled"`.
 Now restart your Chromium browser.
 
 <hr>
-### How to update or add translations?
+
+###  How to update or add translations?
 On v2.2.0 and older:
 Edit the language file inside `resources/lang/` with your favorite text editor.
 Once you're done upload your changes and create a [pull request](https://github.com/andi34/photobooth/pulls).
@@ -278,7 +296,8 @@ Press `CTRL + S` to save your changes (or click on `File` -> `Save`).
 Now upload your changes and create a [pull request](https://github.com/andi34/photobooth/pulls).
 
 <hr>
-### How to ajust the ```php.ini``` file?
+
+###  How to ajust the ```php.ini``` file?
 Open [http://localhost/phpinfo.php](http://localhost/phpinfo.php) in your browser.
 Take a look for "Loaded Configuration File", you need  sudo rights to edit the file.
 Page will look like this:
@@ -287,7 +306,8 @@ Page will look like this:
 </details>
 
 <hr>
-### Turn Photobooth into a WIFI hotspot
+
+###  Turn Photobooth into a WIFI hotspot
 If you would like to allow your guests to download their images without connecting to your private WIFI or when there is no other WIFI around, you can turn your Raspberry Pi into setup an access point and WiFi client/station network on the single WiFi chip of the Raspberry Pi.
 
 The default setting is to call your wifi hotspot *Photobooth* as this is built into the Photobooth prompt for guests to download images via QR code.
