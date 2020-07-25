@@ -315,6 +315,17 @@ $configsetup = [
 			'name' => 'continuous_collage',
 			'value' => $config['continuous_collage']
 		],
+		'use_remotePreview' => [
+			'type' => 'checkbox',
+			'name' => 'use_remotePreview',
+			'value' => $config['use_remotePreview']
+		],
+		'remotePreviewURL' => [
+			'type' => 'input',
+			'name' => 'remotePreviewURL',
+			'placeholder' => 'http://localhost:8090/video-stream.mjpg',
+			'value' => $config['remotePreviewURL']
+		],
 		'previewFromCam' => [
 			'type' => 'checkbox',
 			'name' => 'previewFromCam',

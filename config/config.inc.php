@@ -67,6 +67,8 @@ $config['collage_background'] = '../resources/img/frames/DefaultCollageBackgroun
 // control countdown timer between collage pictures in seconds
 $config['collage_cntdwn_time'] = '3';
 $config['continuous_collage'] = true;
+$config['use_remotePreview'] = false;
+$config['remotePreviewURL'] = 'http://localhost:8090/video-stream.mjpg';
 // Please read https://github.com/andi34/photobooth/wiki/FAQ#how-to-use-a-live-stream-as-background-at-countdown
 $config['previewFromCam'] = false;
 $config['previewCamTakesPic'] = false;

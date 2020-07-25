@@ -100,6 +100,11 @@ if ($data['type'] == 'config') {
     if ($os === 'windows') {
         $newConfig['remotebuzzer_enabled'] = false;
     }
+    if ($newConfig['use_remotePreview']) {
+        $newConfig['previewFromCam'] = false;
+        $newConfig['previewCamTakesPic'] = false;
+        $newConfig['previewFromIPCam'] = false;
+    }
 
     $content = "<?php\n\$config = ". var_export(arrayRecursiveDiff($newConfig, $defaultConfig), true) . ";";
 

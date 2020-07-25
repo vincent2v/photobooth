@@ -167,7 +167,7 @@ const photoBooth = (function () {
                 console.log('Updating Image');
             }
             const img = new Image();
-            img.src = 'http://localhost:8090/video-stream.mjpg?' + new Date().getTime();
+            img.src = config.remotePreviewURL + '?' + new Date().getTime();
             ctx.drawImage(img, 0, 0, 960, 640, 0, 0, 960, 640);
         }, 5000);
     };
@@ -253,7 +253,9 @@ const photoBooth = (function () {
             photoStyle = 'collage';
         }
 
-        api.startRemotePreview();
+        if (config.use_remotePreview) {
+            api.startRemotePreview();
+        }
 
         if (config.previewFromCam) {
             api.startVideo('view');
