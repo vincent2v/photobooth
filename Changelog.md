@@ -3,6 +3,13 @@
 #### Upcoming release
 - *nothing right now*
 
+#### 2.7.1
+**Bugfixes**
+- Fix taking photo collage
+
+**General changes**
+- simple-translator updated to v1.2.0
+
 #### 2.7.0
 **New options**
 - Add option to use numbered image names
