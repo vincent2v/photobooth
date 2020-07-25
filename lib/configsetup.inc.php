@@ -1036,6 +1036,18 @@ $configsetup = [
 			'name' => 'take_picture[msg]',
 			'value' => htmlentities($config['take_picture']['msg'])
 		],
+		'start_preview_cmd' => [
+			'type' => 'input',
+			'placeholder' => 'start_preview_cmd',
+			'name' => 'start_preview[cmd]',
+			'value' => $config['start_preview']['cmd']
+		],
+		'start_preview_msg' => [
+			'type' => 'input',
+			'placeholder' => 'start_preview_msg',
+			'name' => 'start_preview[msg]',
+			'value' => $config['start_preview']['msg']
+		],
 		'print_cmd' => [
 			'type' => 'input',
 			'placeholder' => 'print_cmd',

@@ -222,6 +222,8 @@ $config['slideshow_use_thumbs'] = false;
 // C O M M A N D S
 $config['take_picture']['cmd'] = null;
 $config['take_picture']['msg'] = null;
+$config['start_preview']['cmd'] = null;
+$config['start_preview']['msg'] = null;
 $config['print']['cmd'] = null;
 $config['print']['msg'] = null;
 $config['exiftool']['cmd'] = null;
