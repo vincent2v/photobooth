@@ -1,7 +1,19 @@
 ### Changelog
 
 #### Upcoming release
-- *nothing right now*
+**Bugfixes**
+- use htmlentities on input type configuration (allows to load config containing quotes)
+
+**General changes**
+- Handle -1 & 100% picture quality the same way
+
+**Changed default config**
+- 100% picture quality by default
+- Don't print QR Code by default
+- Allow collage by default
+  - Use collage without interruption by default
+- Show date below pictures inside Gallery by default
+- Disable Chromakeying by default
 
 #### 2.7.1
 **Bugfixes**
