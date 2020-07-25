@@ -73,8 +73,7 @@ require_once('../lib/configsetup.inc.php');
 							echo '<div class="form-row">';
 							switch($field['type']) {
 								case 'input':
-									echo '<label data-l10n="'.$panel.'_'.$key.'">'.$panel.'_'.$key.'</label><input type="text" name="'.$field['name'].'" value="'.$field[
-										'value'].'" placeholder="'.$field['placeholder'].'"/>';
+									echo '<label data-l10n="'.$panel.'_'.$key.'">'.$panel.'_'.$key.'</label><input type="text" name="'.$field['name'].'" value="'.$field['value'].'" placeholder="'.$field['placeholder'].'"/>';
 									break;
 								case 'range':
 									echo '<label data-l10n="'.$panel.'_'.$key.'">'.$panel.'_'.$key.'</label></br>
