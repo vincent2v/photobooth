@@ -1,6 +1,10 @@
 ### Changelog
 
 #### Upcoming release
+
+- *nothig for now*
+
+#### 2.7.2
 **Bugfixes**
 - use htmlentities on input type configuration (allows to load config containing quotes)
 
