@@ -1,8 +1,24 @@
 ### Changelog
 
 #### Upcoming release
+**Bugfixes**
+- fix install-raspbian.sh
+- add missing units for crop on print values (fixes [Issue #91](https://github.com/andi34/photobooth/issues/91))
 
-- *nothig for now*
+**General**
+- simple-translator updated to v2.0.2
+- updated PHPMailer to latest version
+
+**Behind the scenes**
+- Add GitHub contribution doc
+- run `yarn eslint` once changes to our JavaScript get pushed to GitHub or if a Pullrequest contains changes on them
+- run `gulp sass` once changes to our SCSS get pushed to GitHub or if a Pullrequest contains changes on them
+
+New build pipeline and improved JavaScript (special thanks to [Andreas Remdt](https://github.com/andreasremdt)) [#66](https://github.com/andi34/photobooth/pull/90)
+
+- added Prettier to have consistent formatting for both JavaScript & SCSS
+- javascript transpiled to es5 to support older browsers (e.g. Safari 9)
+- use "whatwg-fetch" polyfill which should enable Safari 9 to use simple translator
 
 #### 2.7.2
 **Bugfixes**
