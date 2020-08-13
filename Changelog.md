@@ -21,7 +21,7 @@
 - run `gulp sass` once changes to our SCSS files get pushed to GitHub or if a Pullrequest contains changes on them
 
 **New build pipeline and improved JavaScript**  
-(special thanks to [Andreas Remdt](https://github.com/andreasremdt)) [#66](https://github.com/andi34/photobooth/pull/90)
+(special thanks to [Andreas Remdt](https://github.com/andreasremdt)) [#90](https://github.com/andi34/photobooth/pull/90)
   
 
 - added Prettier to have consistent formatting for both JavaScript & SCSS
