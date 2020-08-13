@@ -20,7 +20,7 @@ A Photobooth webinterface for Raspberry Pi and Windows.
 - Edge <= 16
 - Firefox <= 60
 - Chrome <= 61
-- Safari <= 10
+- Safari <= 9
 - Opera <= 48
 
 ## FAQ - Frequently asked questions

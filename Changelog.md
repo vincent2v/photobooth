@@ -1,6 +1,10 @@
 ### Changelog
 
 #### Upcoming release
+
+- *nothing for now*
+
+#### 2.8.0
 **Bugfixes**
 - fix install-raspbian.sh
 - add missing units for crop on print values (fixes [Issue #91](https://github.com/andi34/photobooth/issues/91))
@@ -11,14 +15,17 @@
 
 **Behind the scenes**
 - Add GitHub contribution doc
-- run `yarn eslint` once changes to our JavaScript get pushed to GitHub or if a Pullrequest contains changes on them
-- run `gulp sass` once changes to our SCSS get pushed to GitHub or if a Pullrequest contains changes on them
+- run `yarn eslint` once changes to our JavaScripts get pushed to GitHub or if a Pullrequest contains changes on them
+- run `gulp sass` once changes to our SCSS files get pushed to GitHub or if a Pullrequest contains changes on them
 
-New build pipeline and improved JavaScript (special thanks to [Andreas Remdt](https://github.com/andreasremdt)) [#66](https://github.com/andi34/photobooth/pull/90)
+**New build pipeline and improved JavaScript**  
+(special thanks to [Andreas Remdt](https://github.com/andreasremdt)) [#66](https://github.com/andi34/photobooth/pull/90)
+  
 
 - added Prettier to have consistent formatting for both JavaScript & SCSS
-- javascript transpiled to es5 to support older browsers (e.g. Safari 9)
-- use "whatwg-fetch" polyfill which should enable Safari 9 to use simple translator
+- Support older browser (should fix [Issue #47](https://github.com/andi34/photobooth/issues/47))
+  - javascript transpiled to es5 to support older browsers (e.g. Safari 9)
+  - use "whatwg-fetch" polyfill which should enable Safari 9 to use simple translator
 
 #### 2.7.2
 **Bugfixes**
@@ -137,7 +144,7 @@ New build pipeline and improved JavaScript (special thanks to [Andreas Remdt](ht
 **General changes**
 - Switch to blue-gray color theme by default
 - Admin panel: switch to range config and use toggles instead checkboxes
-- Switch to `simple-translator` for translations, use english as fallback langauage if a translation is missing. This also gives the possibility to easily translate Photobooth. ( [How to update or add translations?](https://github.com/andi34/photobooth/wiki/FAQ#how-to-update-or-add-translations) )
+- Switch to `simple-translator` for translations, use english as fallback language if a translation is missing. This also gives the possibility to easily translate Photobooth. ( [How to update or add translations?](https://github.com/andi34/photobooth/wiki/FAQ#how-to-update-or-add-translations) )
 
 **New Options**
 - Show/Hide button to toggle fullscreen mode
