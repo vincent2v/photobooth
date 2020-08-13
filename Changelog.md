@@ -8,6 +8,8 @@
 **Bugfixes**
 - fix install-raspbian.sh
 - add missing units for crop on print values (fixes [Issue #91](https://github.com/andi34/photobooth/issues/91))
+- exit slideshow on close if running
+- takeCollage: fix button size on small screens
 
 **General**
 - simple-translator updated to v2.0.2
