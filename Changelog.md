@@ -4,7 +4,7 @@
 **Bugfixes**
 - fix saving images on chroma keying
 
-**New Options***
+**New Options**
 - allow to adjust PhotoSwipe (Gallery) config via Adminpanel, also allow to use some PhotoSwipe functions and make more PhotoSwipe functions available (settings explained inside the manual):
   - Mouse click on image should close the gallery (enable/disable)
   - Close gallery if clicked outside of the image (enable/disable)
@@ -18,7 +18,7 @@
   - Toggle visibility of controls/buttons by tap (enable/disable)
   - allow to adjust PhotoSwipe background opacity (0-1)
 
-**General***
+**General**
 - check for supported mime types on API files (print, chromakeying, applyEffects, deletePhoto)
 - core/chromakeying: Handle print.php API errors
 - Standalone slideshow & Gallery:
