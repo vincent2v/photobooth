@@ -5,7 +5,7 @@
 - fix saving images on chroma keying
 
 **New Options**
-- allow to adjust PhotoSwipe (Gallery) config via Adminpanel, also allow to use some PhotoSwipe functions and make more PhotoSwipe functions available (settings explained inside the manual):
+- allow to adjust PhotoSwipe (Gallery) config via Adminpanel, also allow to use some PhotoSwipe functions and make more PhotoSwipe settings available (settings explained inside the manual):
   - Mouse click on image should close the gallery (enable/disable)
   - Close gallery if clicked outside of the image (enable/disable)
   - Close picture on page scroll (enable/disable)
