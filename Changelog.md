@@ -1,8 +1,31 @@
 ### Changelog
 
 #### Upcoming release
+**Bugfixes**
+- fix saving images on chroma keying
 
-- *nothing for now*
+**New Options***
+- allow to adjust PhotoSwipe (Gallery) config via Adminpanel, also allow to use some PhotoSwipe functions and make more PhotoSwipe functions available (settings explained inside the manual):
+  - Mouse click on image should close the gallery (enable/disable)
+  - Close gallery if clicked outside of the image (enable/disable)
+  - Close picture on page scroll (enable/disable)
+  - Close gallery when dragging vertically and when image is not zoomed (enable/disable)
+  - Show image counter (enable/disable)
+  - Show PhotoSwipe fullscreen button (enable/disable)
+  - Show PhotoSwipe zoom button (enable/disable)
+  - PhotoSwipe history module (enable/disable)
+  - Pinch to close gallery (enable/disable)
+  - Toggle visibility of controls/buttons by tap (enable/disable)
+  - allow to adjust PhotoSwipe background opacity (0-1)
+
+**General***
+- check for supported mime types on API files (print, chromakeying, applyEffects, deletePhoto)
+- core/chromakeying: Handle print.php API errors
+- Standalone slideshow & Gallery:
+  - only use pictures if they exist and if they are readable
+  - only use thumbnails if thumbnail exist and is readable, fallback to full-sized images if not
+- gallery: update picture counter font-size
+- Crop on print: use image quality config
 
 #### 2.8.0
 **Bugfixes**
