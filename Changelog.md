@@ -17,6 +17,7 @@
   - Pinch to close gallery (enable/disable)
   - Toggle visibility of controls/buttons by tap (enable/disable)
   - allow to adjust PhotoSwipe background opacity (0-1)
+  - Loop images when using swipe gesture.
 
 **General**
 - check for supported mime types on API files (print, chromakeying, applyEffects, deletePhoto)
@@ -26,6 +27,7 @@
   - only use thumbnails if thumbnail exist and is readable, fallback to full-sized images if not
 - gallery: update picture counter font-size
 - Crop on print: use image quality config
+- added disk usage page, access via admin panel or at [localhost/admin/diskusage.php](http://localhost/admin/diskusage.php).
 
 #### 2.8.0
 **Bugfixes**
