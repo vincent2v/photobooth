@@ -4,6 +4,18 @@
 **Bugfixes**
 - fix saving images on chroma keying
 
+**General**
+- check for supported mime types on API files (print, chromakeying, applyEffects, deletePhoto)
+- core/chromakeying: Handle print.php API errors
+- Standalone slideshow & Gallery:
+  - only use pictures if they exist and if they are readable
+  - only use thumbnails if thumbnail exist and is readable, fallback to full-sized images if not
+- gallery: update picture counter font-size
+- Crop on print: set image quality to 100% by default
+- added disk usage page, access via admin panel or at [localhost/admin/diskusage.php](http://localhost/admin/diskusage.php).
+- Updated [PhotoSwipe](https://github.com/andi34/PhotoSwipe)
+- added `private/` to .gitignore, can be used e.g. to store own background images
+
 **New Options**
 - allow to adjust PhotoSwipe (Gallery) config via Adminpanel, also allow to use some PhotoSwipe functions and make more PhotoSwipe settings available (settings explained inside the manual):
   - Mouse click on image should close the gallery (enable/disable)
@@ -17,17 +29,9 @@
   - Pinch to close gallery (enable/disable)
   - Toggle visibility of controls/buttons by tap (enable/disable)
   - allow to adjust PhotoSwipe background opacity (0-1)
-  - Loop images when using swipe gesture.
-
-**General**
-- check for supported mime types on API files (print, chromakeying, applyEffects, deletePhoto)
-- core/chromakeying: Handle print.php API errors
-- Standalone slideshow & Gallery:
-  - only use pictures if they exist and if they are readable
-  - only use thumbnails if thumbnail exist and is readable, fallback to full-sized images if not
-- gallery: update picture counter font-size
-- Crop on print: use image quality config
-- added disk usage page, access via admin panel or at [localhost/admin/diskusage.php](http://localhost/admin/diskusage.php).
+  - Loop images (enable/disable)
+  - Slide transition effect (enable/disable)
+  - Swiping to change slides (enable/disable)
 
 #### 2.8.0
 **Bugfixes**
