@@ -15,6 +15,17 @@
 - added disk usage page, access via admin panel or at [localhost/admin/diskusage.php](http://localhost/admin/diskusage.php).
 - Updated [PhotoSwipe](https://github.com/andi34/PhotoSwipe)
 - added `private/` to .gitignore, can be used e.g. to store own background images
+- install-raspbian.sh:
+  - check if gvfs-gphoto2-volume-monitor exists
+  - remove unneeded "sudo" on yarn installation
+  - make sure webserver is defined
+  - Add missing common "nodejs" package
+  - allow to choose between stable and development version
+- update build dependencies to it's latest versions
+
+**Workflow**
+- github: add pull request template
+- github: don't allow empty issues, emojis to issue template names
 
 **New Options**
 - allow to adjust PhotoSwipe (Gallery) config via Adminpanel, also allow to use some PhotoSwipe functions and make more PhotoSwipe settings available (settings explained inside the manual):
@@ -32,6 +43,7 @@
   - Loop images (enable/disable)
   - Slide transition effect (enable/disable)
   - Swiping to change slides (enable/disable)
+- gallery: add button to delete an image, enable by default
 
 #### 2.8.0
 **Bugfixes**
