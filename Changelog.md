@@ -22,6 +22,7 @@
   - Add missing common "nodejs" package
   - allow to choose between stable and development version
 - update build dependencies to it's latest versions
+- Photobooth joined Crowdin as localization manager, [join here](https://crowdin.com/project/photobooth) to translate Photobooth
 
 **Workflow**
 - github: add pull request template

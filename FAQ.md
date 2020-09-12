@@ -263,37 +263,15 @@ Now restart your Chromium browser.
 <hr>
 
 ### How to update or add translations?
-On v2.2.0 and older:
-Edit the language file inside `resources/lang/` with your favorite text editor.
+**On v2.3.0 and newer:**  
+Photobooth joined Crowdin as localization manager, [join here](https://crowdin.com/project/photobooth) to translate Photobooth.  
+Crowdin gives a nice webinterface to make translating easy as possible. If there's different translations for a string, translator can use the vote function on suggested translations.  
+With Crowdin and your help translating we're able to get high-quality translations for all supported languages. Also it's easy to support a wider range of languages!  
+Your language is missing? Don't worry, create a [localization request here](https://github.com/andi34/photobooth/issues/new/choose) and we'll add it to the project.  
+
+**On v2.2.0 and older:**  
+Edit the language file inside `resources/lang/` with your favorite text editor.  
 Once you're done upload your changes and create a [pull request](https://github.com/andi34/photobooth/pulls).
-
-On v2.3.0 and newer:
-Get i18n-editor v2.0.0-beta.1 [from here](https://github.com/jcbvm/i18n-editor/releases/tag/2.0.0-beta.1). The application requires java 8 to be installed on your system. You can get java 8 from [https://www.oracle.com](https://www.oracle.com/java/technologies/javase-jre8-downloads.html).
-
-- If you're on Windows you can install the application by running the `.exe` file. If you're on Mac you can use the application by running the `.app` file. If you're on Linux you can use the application by running the `.jar` file (`java -jar i18n-editor.jar`).
-
-If you are running i18n-editor the first time, you simply need to drag-and-drop the `lang` folder (inside your photobooth source inside the `resources` folder) into i18n-editor:
-
-<details><summary>CLICK ME</summary>
-<img src="../resources/img/faq/i18n.png">
-</details>
-
-You could also click on `File` -> `New Project` -> `JSON Format ...` -> navigate into the `lang` folder -> click on `open`
-Now you get asked if you like to import found existing translations -> confirm clicking on `yes`:
-
-<details><summary>CLICK ME</summary>
-<img src="../resources/img/faq/i18n-import.png">
-</details>
-
-Make your translations:
-
-<details><summary>CLICK ME</summary>
-<img src="../resources/img/faq/i18n-imported.png">
-</details>
-
-Press `CTRL + S` to save your changes (or click on `File` -> `Save`).
-
-Now upload your changes and create a [pull request](https://github.com/andi34/photobooth/pulls).
 
 <hr>
 
