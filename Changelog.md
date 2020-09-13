@@ -1,8 +1,31 @@
 ### Changelog
 
 #### Upcoming release
+- *nothing for now*
+
+#### 2.9.0
 **Bugfixes**
 - fix saving images on chroma keying
+
+**New Options**
+- allow to adjust PhotoSwipe (Gallery) config via Adminpanel, also allow to use some PhotoSwipe functions and make more PhotoSwipe settings available (settings explained inside the manual):
+  - Mouse click on image should close the gallery (enable/disable)
+  - Close gallery if clicked outside of the image (enable/disable)
+  - Close picture on page scroll (enable/disable)
+  - Close gallery when dragging vertically and when image is not zoomed (enable/disable)
+  - Show image counter (enable/disable)
+  - Show PhotoSwipe fullscreen button (enable/disable)
+  - Show PhotoSwipe zoom button (enable/disable)
+  - PhotoSwipe history module (enable/disable)
+  - Pinch to close gallery (enable/disable)
+  - Toggle visibility of controls/buttons by tap (enable/disable)
+  - allow to adjust PhotoSwipe background opacity (0-1)
+  - Loop images (enable/disable)
+  - Slide transition effect (enable/disable)
+  - Swiping to change slides (enable/disable)
+- gallery: add button to delete an image, enable by default
+- Remote Buzzer Server based on io sockets
+  - Enables a GPIO pin connected hardware button / buzzer for a setup where the display / screen is connected via WLAN / network to the photobooth webserver (e.g. iPad).
 
 **General**
 - check for supported mime types on API files (print, chromakeying, applyEffects, deletePhoto)
@@ -27,24 +50,6 @@
 **Workflow**
 - github: add pull request template
 - github: don't allow empty issues, emojis to issue template names
-
-**New Options**
-- allow to adjust PhotoSwipe (Gallery) config via Adminpanel, also allow to use some PhotoSwipe functions and make more PhotoSwipe settings available (settings explained inside the manual):
-  - Mouse click on image should close the gallery (enable/disable)
-  - Close gallery if clicked outside of the image (enable/disable)
-  - Close picture on page scroll (enable/disable)
-  - Close gallery when dragging vertically and when image is not zoomed (enable/disable)
-  - Show image counter (enable/disable)
-  - Show PhotoSwipe fullscreen button (enable/disable)
-  - Show PhotoSwipe zoom button (enable/disable)
-  - PhotoSwipe history module (enable/disable)
-  - Pinch to close gallery (enable/disable)
-  - Toggle visibility of controls/buttons by tap (enable/disable)
-  - allow to adjust PhotoSwipe background opacity (0-1)
-  - Loop images (enable/disable)
-  - Slide transition effect (enable/disable)
-  - Swiping to change slides (enable/disable)
-- gallery: add button to delete an image, enable by default
 
 #### 2.8.0
 **Bugfixes**
