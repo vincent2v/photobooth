@@ -18,10 +18,12 @@
   - allow to adjust time "Started printing! Please wait..." is visible
   - allow to trigger print via defined key
   - options to show the print button independent (e.g. can be only visible on gallery)
-- Choose collage layout [#108](https://github.com/andi34/photobooth/pull/108):
-  - 2x2
-  - 2x4
-  - 2x4 + background image
+- Advanced collage options [#108](https://github.com/andi34/photobooth/pull/108):
+  - Choose collage layout:
+    - 2x2
+    - 2x4
+    - 2x4 + background image
+  - Collage: apply frame once after taking or to every picture of the collage
 
 **General**
 - reordered folder setup
