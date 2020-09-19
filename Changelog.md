@@ -1,7 +1,30 @@
 ### Changelog
 
 #### Upcoming release
-- *nothing for now*
+**Bugfixes**
+- check if we're already printing to avoid double printing
+- deletePhoto: also delete keying and tmp pictures
+
+**New Options**
+- Choose thumbnail size:
+  - XS = max 360px
+  - S = max 540px
+  - M = max 900px
+  - L = max 1080px
+  - XL = max 1260px"
+- Advanced printing functions [#109](https://github.com/andi34/photobooth/pull/109):
+  - Auto print function
+  - allow to delay auto print
+  - allow to adjust time "Started printing! Please wait..." is visible
+  - allow to trigger print via defined key
+  - options to show the print button independent (e.g. can be only visible on gallery or only gallery
+- Choose collage layout [#108](https://github.com/andi34/photobooth/pull/108):
+  - 2x2
+  - 2x4
+  - 2x4 + background image
+
+**General**
+- reordered folder setup
 
 #### 2.9.0
 **Bugfixes**
