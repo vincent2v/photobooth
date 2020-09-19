@@ -17,7 +17,7 @@
   - allow to delay auto print
   - allow to adjust time "Started printing! Please wait..." is visible
   - allow to trigger print via defined key
-  - options to show the print button independent (e.g. can be only visible on gallery or only gallery
+  - options to show the print button independent (e.g. can be only visible on gallery)
 - Choose collage layout [#108](https://github.com/andi34/photobooth/pull/108):
   - 2x2
   - 2x4
