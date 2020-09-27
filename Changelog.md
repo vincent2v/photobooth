@@ -1,6 +1,9 @@
 ### Changelog
 
 #### Upcoming release
+- *nothing for now*
+
+#### 2.10.0
 **Bugfixes**
 - check if we're already printing to avoid double printing
 - deletePhoto: also delete keying and tmp pictures
