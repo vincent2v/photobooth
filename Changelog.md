@@ -10,6 +10,7 @@
 - add back fallback to english if translation is missing
 
 **New Options**
+- allow to use thumnails for download
 - Choose thumbnail size:
   - XS = max 360px
   - S = max 540px
