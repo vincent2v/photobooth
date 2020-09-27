@@ -4,6 +4,7 @@
 **Bugfixes**
 - check if we're already printing to avoid double printing
 - deletePhoto: also delete keying and tmp pictures
+- add back fallback to english if translation is missing
 
 **New Options**
 - Choose thumbnail size:
@@ -27,6 +28,8 @@
 
 **General**
 - reordered folder setup
+- Crowdin translation import
+- add Polish to supported languages
 
 #### 2.9.0
 **Bugfixes**
