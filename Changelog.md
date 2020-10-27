@@ -1,7 +1,14 @@
 ### Changelog
 
 #### Upcoming release
-- *nothing for now*
+**New Options**
+- feature (standalone gallery): continous check for new pictures [#121](https://github.com/andi34/photobooth/pull/121):
+
+**General**
+- Admin panel option to hide / show panel headings by Operating System
+- Error handling:
+  - api (applyEffects): check if GD library is loaded
+
 
 #### 2.10.0
 **Bugfixes**
