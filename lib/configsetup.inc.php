@@ -243,7 +243,8 @@ $configsetup = [
 				'1000px' => 'S',
 				'1500px' => 'M',
 				'2000px' => 'L',
-				'2500px' => 'XL'
+				'2500px' => 'XL',
+				'0px' => 'Original'
 			],
 			'value' => $config['chroma_size']
 		],

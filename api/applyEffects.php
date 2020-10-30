@@ -117,15 +117,16 @@ if ($config['take_frame'] && $_POST['isCollage'] !== 'true') {
     $imageModified = true;
 }
 
-if ($config['chroma_keying']) {
+if ($config['chroma_keying'] && $chroma_size > 0) {
     $chromaCopyResource = resizeImage($imageResource, $chroma_size, $chroma_size);
     imagejpeg($chromaCopyResource, $filename_keying, $config['jpeg_quality_chroma']);
     imagedestroy($chromaCopyResource);
+} else {
+    copy($filename_tmp, $filename_keying);
 }
 
 // image scale, create thumbnail
 $thumbResource = resizeImage($imageResource, $thumb_size, $thumb_size);
-
 imagejpeg($thumbResource, $filename_thumb, $config['jpeg_quality_thumb']);
 imagedestroy($thumbResource);
 

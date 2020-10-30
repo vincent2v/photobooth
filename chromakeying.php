@@ -6,7 +6,13 @@ if (empty($_GET['filename'])) {
 }
 
 $filename = $_GET['filename'];
-$keyingimage = $config['folders']['keying'] . DIRECTORY_SEPARATOR . $filename;
+$chroma_size = substr($config['chroma_size'], 0, -2);
+
+if ($chroma_size > 0) {
+    $keyingimage = $config['folders']['keying'] . DIRECTORY_SEPARATOR . $filename;
+} else {
+    $keyingimage = $config['folders']['images'] . DIRECTORY_SEPARATOR . $filename;
+}
 
 if (file_exists($keyingimage)) {
     // Only jpg/jpeg are supported
