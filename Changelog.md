@@ -1,14 +1,22 @@
 ### Changelog
 
 #### Upcoming release
+**Bugfixes**
+- chromakeying: respect thumnail config
+
 **New Options**
 - feature (standalone gallery): continous check for new pictures [#121](https://github.com/andi34/photobooth/pull/121):
+- Make imagesize for chromakeying adjustable
+  - S = max 1000px
+  - M = max 1500px (default like before)
+  - L = max 2000px
+  - XL = max 2500px
 
 **General**
+- Installation [Instructions for Windows](https://github.com/andi34/photobooth/wiki/Installation-on-Windows) added to Wiki
 - Admin panel option to hide / show panel headings by Operating System
 - Error handling:
   - api (applyEffects): check if GD library is loaded
-
 
 #### 2.10.0
 **Bugfixes**
