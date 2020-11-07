@@ -5,15 +5,17 @@
 - chromakeying: respect thumnail config
 
 **New Options**
-- feature (standalone gallery): continous check for new pictures [#121](https://github.com/andi34/photobooth/pull/121):
+- feature (standalone gallery): continous check for new pictures [#121](https://github.com/andi34/photobooth/pull/121)
 - Make imagesize for chromakeying adjustable
   - S = max 1000px
   - M = max 1500px (default like before)
   - L = max 2000px
   - XL = max 2500px
+- Allow to switch between MarvinJ and Seriously.js algorithm for chroma keying [#123](https://github.com/andi34/photobooth/pull/123)
 
 **General**
 - Installation [Instructions for Windows](https://github.com/andi34/photobooth/wiki/Installation-on-Windows) added to Wiki
+- install-raspbian: Ask if a Raspberry Pi (HQ) camera is used, if yes setup personal config with needed changes [#128](https://github.com/andi34/photobooth/pull/128):
 - Admin panel option to hide / show panel headings by Operating System
 - Error handling:
   - api (applyEffects): check if GD library is loaded
