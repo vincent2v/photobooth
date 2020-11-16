@@ -35,28 +35,28 @@ require_once('../lib/configsetup.inc.php');
 		<?php if( !$config['login_enabled'] || (isset($_SESSION['auth']) && $_SESSION['auth'] === true) || !$config['protect_admin']): ?>
 		<button class="reset-btn">
 			<span class="save">
-				<span data-l10n="reset"></span>
+				<span data-i18n="reset"></span>
 			</span>
 			<span class="saving">
 				<i class="fa fa-circle-o-notch fa-spin fa-fw"></i>
-				<span data-l10n="saving"></span>
+				<span data-i18n="saving"></span>
 			</span>
 			<span class="success">
 				<i class="fa fa-check"></i>
-				<span data-l10n="success"></span>
+				<span data-i18n="success"></span>
 			</span>
 			<span class="error">
 				<i class="fa fa-times"></i>
-				<span data-l10n="saveerror"></span>
+				<span data-i18n="saveerror"></span>
 			</span>
 		</button>
 
 		<?php if(isset($_SESSION['auth']) && $_SESSION['auth'] === true): ?>
-		<p><a href="../logout.php" class="btn btn--tiny btn--flex fa fa-sign-out"><span data-l10n="logout"></span></a></p>
+		<p><a href="../login/logout.php" class="btn btn--tiny btn--flex fa fa-sign-out"><span data-i18n="logout"></span></a></p>
 		<?php endif; ?>
 
-		<div id="checkVersion">
-			<p><a href="#" class="btn btn--tiny btn--flex"><span data-l10n="check_version"></span></a></p>
+		<div id="diskUsage">
+			<a href="diskusage.php" class="btn btn--tiny btn--flex"><span data-i18n="disk_usage"></span></a>
 		</div>
 
 		<div class="accordion">
@@ -64,24 +64,43 @@ require_once('../lib/configsetup.inc.php');
 				<?php
 					$i = 0;
 					foreach($configsetup as $panel => $fields) {
+						if (! empty($fields['platform']) && $fields['platform'] != 'all' && $fields['platform'] != $os) {
+							continue;
+						};
+
 						$open = '';
 						if($i == 0){
 							$open = ' open init';
 						}
-						echo '<div class="panel'.$open.'"><div class="panel-heading"><h3><span class="minus">-</span><span class="plus">+</span><span data-l10n="'.$panel.'">'.$panel.'</span></h3></div>
+						echo '<div class="panel'.$open.'"><div class="panel-heading"><h3><span class="minus">-</span><span class="plus">+</span><span data-i18n="'.$panel.'">'.$panel.'</span> <a href="../manual" title="Need help?" target="newwin"><i class="fa fa-info-circle" aria-hidden="true"></i></a></h3></div>
 									<div class="panel-body">
 						';
 
 						foreach($fields as $key => $field){
+							if ($key == 'platform') {
+								continue;
+							};
 							echo '<div class="form-row">';
 							switch($field['type']) {
 								case 'input':
-									echo '<label data-l10n="'.$panel.'_'.$key.'">'.$panel.'_'.$key.'</label><input type="text" name="'.$field['name'].'" value="'.$field[
-										'value'].'" placeholder="'.$field['placeholder'].'"/>';
+									echo '<label data-i18n="'.$panel.'_'.$key.'">'.$panel.'_'.$key.'</label><input type="text" name="'.$field['name'].'" value="'.$field['value'].'" placeholder="'.$field['placeholder'].'"/>';
+									break;
+								case 'range':
+									echo '<label data-i18n="'.$panel.'_'.$key.'">'.$panel.'_'.$key.'</label></br>
+										<div class="'.$field['name'].'"><span>'.$field['value'].'</span> <span data-i18n="'.$field['unit'].'"</span></div>
+										<input type="range" name="'.$field['name'].'" class="slider" value="'.$field['value'].'" min="'.$field['range_min'].'" max="'.$field['range_max'].'" step="'.$field['range_step'].'" placeholder="'.$field['placeholder'].'"/>
+										<script>
+										window.addEventListener("load", function() {
+											var slider = document.querySelector("input[name='.$field['name'].']");
+											slider.addEventListener("change", function() {
+												document.querySelector(".'.$field['name'].' span").innerHTML = this.value;
+											});
+										});
+										</script>';
 									break;
 								case 'color':
 									echo '<input type="color" name="'.$field['name'].'" value="'.$field['value'].'" placeholder="'.$field['placeholder'].'"/>
-										<label data-l10n="'.$panel.'_'.$key.'"> '.$panel.'_'.$key.'</label>';
+										<label data-i18n="'.$panel.'_'.$key.'"> '.$panel.'_'.$key.'</label>';
 									break;
 								case 'hidden':
 									echo '<input type="hidden" name="'.$field['name'].'" value="'.$field['value'].'"/>';
@@ -91,12 +110,13 @@ require_once('../lib/configsetup.inc.php');
 									if ($field['value'] == 'true') {
 										$checked = ' checked="checked"';
 									}
-									echo '<label><input type="checkbox" '.$checked.' name="'.$field['name'].'" value="true"/><span data-l10n="'.$key.'">'.$key.'</span></label>';
+									echo '<span data-i18n="'.$key.'">'.$key.'</span></br>
+										<label class="switch"><input type="checkbox" '.$checked.' name="'.$field['name'].'" value="true"/><span class="toggle"></span></label>';
 									break;
 								case 'multi-select':
 								case 'select':
 									$selectTag = '<select name="'.$field['name'] . ($field['type'] === 'multi-select' ? '[]' : '') . '"' . ($field['type'] === 'multi-select' ? ' multiple="multiple" size="10"' : '') . '>';
-									echo '<label data-l10n="'.$panel.'_'.$key.'">'.$panel.'_'.$key.'</label>' . $selectTag;
+									echo '<label data-i18n="'.$panel.'_'.$key.'">'.$panel.'_'.$key.'</label>' . $selectTag;
 										foreach($field['options'] as $val => $option) {
 											$selected = '';
 											if ((is_array($field['value']) && in_array($val, $field['value'])) || ($val === $field['value'])) {
@@ -116,34 +136,35 @@ require_once('../lib/configsetup.inc.php');
 			</form>
 			<button class="save-btn">
 				<span class="save">
-					<span data-l10n="save"></span>
+					<span data-i18n="save"></span>
 				</span>
 				<span class="saving">
 					<i class="fa fa-circle-o-notch fa-spin fa-fw"></i>
-					<span data-l10n="saving"></span>
+					<span data-i18n="saving"></span>
 				</span>
 				<span class="success">
 					<i class="fa fa-check"></i>
-					<span data-l10n="success"></span>
+					<span data-i18n="success"></span>
 				</span>
 				<span class="error">
 					<i class="fa fa-times"></i>
-					<span data-l10n="saveerror"></span>
+					<span data-i18n="saveerror"></span>
 				</span>
 			</button>
 		<?php else:
-		header("location: ../login.php");
+		header("location: ../login");
 		exit;
 		endif; ?>
 		</div>
 	</div>
 
+	<script src="../node_modules/whatwg-fetch/dist/fetch.umd.js"></script>
 	<script type="text/javascript" src="../api/config.php"></script>
 	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="../resources/js/l10n.js"></script>
 	<script type="text/javascript" src="../resources/js/theme.js"></script>
 	<script type="text/javascript" src="../resources/js/admin.js"></script>
-	<script type="text/javascript" src="../resources/lang/<?php echo $config['language']; ?>.js"></script>
+	<script src="../node_modules/@andreasremdt/simple-translator/dist/umd/translator.min.js"></script>
+	<script type="text/javascript" src="../resources/js/i18n-sub.js"></script>
 
 </body>
 </html>

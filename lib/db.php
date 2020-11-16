@@ -1,7 +1,8 @@
 <?php
 require_once(__DIR__ . '/config.php');
 
-define('DB_FILE', $config['foldersAbs']['data'] . '/db.txt');
+define('DB_FILE', $config['foldersAbs']['data'] . DIRECTORY_SEPARATOR . $config['db_file'] . '.txt');
+define('MAIL_FILE', $config['foldersAbs']['data'] . DIRECTORY_SEPARATOR . $config['mail_file'] . '.txt');
 
 function getImagesFromDB() {
 	// get data from db.txt
@@ -25,12 +26,17 @@ function deleteImageFromDB($filename) {
 	$images = getImagesFromDB();
 
 	unset($images[array_search($filename, $images)]);
-
-	file_put_contents(DB_FILE, json_encode($images));
 }
 
 function isImageInDB($filename) {
 	$images = getImagesFromDB();
 
 	return in_array($filename, $images);
+}
+
+function getDBSize(){
+	if(file_exists(DB_FILE)){
+		return (int) filesize(DB_FILE);
+	}
+	return 0;
 }

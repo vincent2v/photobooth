@@ -3,6 +3,15 @@
 require_once('lib/config.php');
 require_once('lib/db.php');
 
+// Check if there is a request for the status of the database
+if (isset($_GET['status'])){
+	// Request for DB-Status,
+	// Currently reports back the DB-Size to give the Client the ability
+	// to detect changes
+	$resp = array('dbsize'=>getDBSize());
+	exit(json_encode($resp));
+}
+
 $images = getImagesFromDB();
 $imagelist = ($config['newest_first'] === true) ? array_reverse($images) : $images;
 ?>
@@ -30,9 +39,12 @@ $imagelist = ($config['newest_first'] === true) ? array_reverse($images) : $imag
 
 	<link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
 	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css" />
-	<link rel="stylesheet" href="node_modules/photoswipe/dist/photoswipe.css" />
-	<link rel="stylesheet" href="node_modules/photoswipe/dist/default-skin/default-skin.css" />
+	<link rel="stylesheet" href="vendor/PhotoSwipe/dist/photoswipe.css" />
+	<link rel="stylesheet" href="vendor/PhotoSwipe/dist/default-skin/default-skin.css" />
 	<link rel="stylesheet" href="resources/css/style.css" />
+	<?php if ($config['gallery_bottom_bar']): ?>
+	<link rel="stylesheet" href="resources/css/photoswipe-bottom.css" />
+	<?php endif; ?>
 	<?php if ($config['rounded_corners']): ?>
 	<link rel="stylesheet" href="resources/css/rounded.css" />
 	<?php endif; ?>
@@ -47,24 +59,24 @@ $imagelist = ($config['newest_first'] === true) ? array_reverse($images) : $imag
 
 	<div class="send-mail">
 		<i class="fa fa-times" id="send-mail-close"></i>
-		<p data-l10n="insertMail"></p>
+		<p data-i18n="insertMail"></p>
 		<form id="send-mail-form" style="margin: 0;">
 			<input class="mail-form-input" size="35" type="email" name="sendTo">
 			<input id="mail-form-image" type="hidden" name="image" value="">
 
 			<?php if ($config['send_all_later']): ?>
 				<input type="checkbox" id="mail-form-send-link" name="send-link" value="yes">
-				<label data-l10n="sendAllMail" for="mail-form-send-link"></label>
+				<label data-i18n="sendAllMail" for="mail-form-send-link"></label>
 			<?php endif; ?>
 
-			<button class="mail-form-input btn" name="submit" type="submit" value="Send"><span data-l10n="send"></span></button>
+			<button class="mail-form-input btn" name="submit" type="submit" value="Send"><span data-i18n="send"></span></button>
 		</form>
 
 		<div id="mail-form-message" style="max-width: 75%"></div>
 	</div>
 
 	<div class="modal" id="print_mesg">
-		<div class="modal__body"><span data-l10n="printing"></span></div>
+		<div class="modal__body"><span data-i18n="printing"></span></div>
 	</div>
 
 	<div id="adminsettings">
@@ -73,33 +85,20 @@ $imagelist = ($config['newest_first'] === true) ? array_reverse($images) : $imag
 		</div>
 	</div>
 
+	<script src="node_modules/whatwg-fetch/dist/fetch.umd.js"></script>
 	<script type="text/javascript" src="api/config.php"></script>
 	<script type="text/javascript" src="resources/js/adminshortcut.js"></script>
 	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="resources/js/l10n.js"></script>
-	<script type="text/javascript" src="resources/js/vendor/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="resources/js/vendor/TweenLite.min.js"></script>
-	<script type="text/javascript" src="resources/js/vendor/EasePack.min.js"></script>
-	<script type="text/javascript" src="resources/js/vendor/jquery.gsap.min.js"></script>
-	<script type="text/javascript" src="resources/js/vendor/CSSPlugin.min.js"></script>
-	<script type="text/javascript" src="node_modules/photoswipe/dist/photoswipe.min.js"></script>
-	<script type="text/javascript" src="node_modules/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+	<script type="text/javascript" src="vendor/PhotoSwipe/dist/photoswipe.min.js"></script>
+	<script type="text/javascript" src="vendor/PhotoSwipe/dist/photoswipe-ui-default.min.js"></script>
 	<script type="text/javascript" src="resources/js/photoinit.js"></script>
 	<script type="text/javascript" src="resources/js/theme.js"></script>
 	<script type="text/javascript" src="resources/js/core.js"></script>
-	<script type="text/javascript" src="resources/lang/<?php echo $config['language']; ?>.js"></script>
-	<script>
-		$(function() {
-			let reloadElement = $('<a class="gallery__reload">');
-			reloadElement.append('<i class="fa fa-refresh"></i>');
-			reloadElement.attr('href', '#');
-			reloadElement.on('click', () => photoBooth.reloadPage());
-			reloadElement.appendTo('.gallery__header');
-
-			$('.gallery__close').hide();
-
-			photoBooth.openGallery();
-		});
-	</script>
+	<script type="text/javascript" src="resources/js/gallery.js"></script>
+	<?php if ($config['gallery_db_check_enabled']): ?>
+	<script type="text/javascript" src="resources/js/gallery_updatecheck.js"></script>
+	<?php endif; ?>
+	<script src="node_modules/@andreasremdt/simple-translator/dist/umd/translator.min.js"></script>
+	<script type="text/javascript" src="resources/js/i18n.js"></script>
 </body>
 </html>

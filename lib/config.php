@@ -12,7 +12,11 @@ $cmds = [
             'msg' => 'Photo transfer done.'
         ],
         'print' => [
-            'cmd' => 'mspaint /pt "%s"',
+            'cmd' => 'mspaint /pt %s',
+            'msg' => '',
+        ],
+        'exiftool' => [
+            'cmd' => '',
             'msg' => '',
         ]
     ],
@@ -23,6 +27,10 @@ $cmds = [
         ],
         'print' => [
             'cmd' => 'lp -o landscape -o fit-to-page %s',
+            'msg' => '',
+        ],
+        'exiftool' => [
+            'cmd' => 'exiftool -overwrite_original -TagsFromFile %s %s',
             'msg' => '',
         ]
     ],
@@ -55,8 +63,12 @@ $config['take_picture']['cmd'] = $cmds[$os]['take_picture']['cmd'];
 $config['take_picture']['msg'] = $cmds[$os]['take_picture']['msg'];
 $config['print']['cmd'] = $cmds[$os]['print']['cmd'];
 $config['print']['msg'] = $cmds[$os]['print']['msg'];
+$config['exiftool']['cmd'] = $cmds[$os]['exiftool']['cmd'];
+$config['exiftool']['msg'] = $cmds[$os]['exiftool']['msg'];
 
 $config['collage_limit'] = 4;
+
+$config['remotebuzzer_logfile'] = 'io_server.log';
 
 $defaultConfig = $config;
 
@@ -73,15 +85,15 @@ if ($config['dev']) {
 }
 
 if (!isset($config['background_image'])) {
-    $config['background_image'] = 'url(../img/bg.jpg)';
+    $config['background_image'] = 'url(../img/bg_bluegray.jpg)';
 }
 
 if (!isset($config['background_admin'])) {
-    $config['background_admin'] = 'url(../img/bg.jpg)';
+    $config['background_admin'] = 'url(../img/bg_bluegray.jpg)';
 }
 
 if (!isset($config['background_chroma'])) {
-    $config['background_chroma'] = 'url(../img/bg.jpg)';
+    $config['background_chroma'] = 'url(../img/bg_bluegray.jpg)';
 }
 
 if (file_exists($my_config_file) && !is_writable($my_config_file)) {

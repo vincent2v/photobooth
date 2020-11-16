@@ -1,24 +1,31 @@
 {
   "name": "photobooth",
-  "version": "2.1.0-alpha",
+  "version": "2.4.0-alpha",
   "description": "A Photobooth webinterface for Raspberry Pi and Windows",
   "scripts": {
-    "build": "gulp sass",
-    "watch": "gulp sass:watch",
+    "build": "npm-run-all --serial format build:faq build:gulp",
+    "build:faq": "mdown --input 'faq/*.md' --output manual --header faq/header.html --footer faq/footer.html",
+    "build:gulp": "gulp",
+    "build:sass": "gulp sass",
+    "eslint": "eslint src/js/*.js",
+    "eslint:fix": "eslint src/js/*.js --fix",
+    "format": "npm-run-all --parallel format:*",
+    "format:js": "prettier src/js/*.js --write",
+    "format:scss": "prettier src/sass/{,*/**/}*.scss --write",
+    "pack:build": "npm-run-all --serial eslint build pack:zip",
+    "pack:zip": "node scripts/pack-build.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "eslint resources/js/*.js resources/lang/*.js",
-    "eslint:fix": "eslint resources/js/*.js resources/lang/*.js --fix",
-    "pack:build": "node scripts/pack-build.js"
+    "watch": "gulp watch"
   },
-  "author": "",
+  "author": "Andreas Blaesius <andi@unlegacy-android.org>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/andreknieriem/photobooth.git"
+    "url": "git+https://github.com/andi34/photobooth.git"
   },
-  "homepage": "https://github.com/andreknieriem/photobooth",
+  "homepage": "http://andi34.github.io/photobooth",
   "bugs": {
-    "url": "https://github.com/andreknieriem/photobooth/issues"
+    "url": "https://github.com/andi34/photobooth/issues"
   },
   "keywords": [
     "photobooth",
@@ -31,18 +38,30 @@
     "events"
   ],
   "dependencies": {
+    "@andreasremdt/simple-translator": "^2.0.3",
     "font-awesome": "^4.7.0",
+    "gh-markdown-cli": "^0.2.0",
+    "github-markdown-css": "^4.0.0",
     "gulp": "4.0.2",
-    "gulp-sass": "4.0.2",
-    "jquery": "^3.4.1",
-    "marvinj": "https://github.com/gabrielarchanjo/marvinj",
+    "gulp-sass": "4.1.0",
+    "jquery": "^3.5.1",
+    "marvinj": "^1.0.0",
     "normalize.css": "^8.0.1",
-    "photoswipe": "^4.1.3"
+    "npm-run-all": "^4.1.5",
+    "rpio": "^2.1.1",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.1",
+    "whatwg-fetch": "^3.4.0"
   },
   "devDependencies": {
-    "archiver": "^3.1.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "archiver": "^5.0.2",
     "colors": "^1.4.0",
-    "eslint": "^6.5.1",
-    "git-tag-version": "^1.3.1"
+    "eslint": "^7.12.1",
+    "eslint-plugin-node": "^11.1.0",
+    "git-tag-version": "^1.3.1",
+    "gulp-babel": "^8.0.0",
+    "prettier": "^2.1.2"
   }
 }
